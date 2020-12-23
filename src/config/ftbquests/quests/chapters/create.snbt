@@ -1,0 +1,173 @@
+{
+	id: 26,
+	filename: "create",
+	order_index: 4,
+	title: "Create",
+	icon: "create:cogwheel",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			description: ["Create lets you automate lots of tasks like smelting and farming, using the infinite power of rotating machinery."],
+			id: 47,
+			tasks: [{
+				id: 78,
+				type: "checkmark",
+				title: "Create",
+				icon: "create:cogwheel"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 2.0d,
+			description: ["This basic material is necessary to begin using this mod. Mine Zinc using iron tools."],
+			dependencies: [I;47],
+			id: 81,
+			tasks: [{
+				id: 82,
+				type: "item",
+				item: "create:andesite_alloy"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 2.0d,
+			description: ["This is the cheapest source of rotation, which all machines need to operate. Use gears and shafts to convey rotation. The wayerwheel needs moving water to flow under or over it for it to spin."],
+			dependencies: [I;81],
+			id: 83,
+			tasks: [{
+				id: 84,
+				type: "item",
+				item: "create:water_wheel"
+			}],
+			rewards: [{
+				id: 87,
+				type: "item",
+				item: "minecraft:water_bucket"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			description: [
+				"The press can be used to convert ingots into plates- Place the press with an empty block between it and the ground, then throw ingots on the ground under the press and it will (slowly) press them.",
+				"Large and small gears can be used in combination to increase or decrease rotation speed. Machines work faster if the rotation is faster, but they will also consume more stress."
+			],
+			dependencies: [I;83],
+			id: 85,
+			tasks: [{
+				id: 86,
+				type: "item",
+				item: "create:mechanical_press"
+			}],
+			rewards: [{
+				id: 88,
+				type: "item",
+				item: "create:wrench"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			description: ["When placed vertically, the saw can strip logs, or cut stripped logs into 5 planks. Place two saws next to each other and they will pass the items along automatically."],
+			dependencies: [I;85],
+			id: 89,
+			tasks: [{
+				id: 90,
+				type: "item",
+				item: "create:mechanical_saw"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			description: ["Can be used to crush wheat and flowers to improve their yield. Can crush ores as well, but you will need to wash the result with a fan to get any benefit."],
+			dependencies: [I;85],
+			id: 91,
+			tasks: [{
+				id: 92,
+				type: "item",
+				item: "create:millstone"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.0d,
+			description: ["Fans can blow around items and mobs. If you blow air through water, lava, or fire, you can use it for crafting. Washing crushed ore into nuggets has a better return than smelting it into ingots. Use slabs or fences to hold the liquid in place."],
+			dependencies: [I;85],
+			id: 93,
+			tasks: [{
+				id: 94,
+				type: "item",
+				item: "create:encased_fan"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -2.0d,
+			description: ["Sick of the fan blowing around your items? Use a depot and it can hold your items in place safely while they are being washed or cooked."],
+			dependencies: [I;93],
+			id: 95,
+			tasks: [{
+				id: 96,
+				type: "item",
+				item: "create:depot"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.0d,
+			description: ["When moving, harvests and replants fully grown crops it hits. Try attaching some to the bottom of a windmill-driven structure."],
+			dependencies: [I;85],
+			id: 97,
+			tasks: [{
+				id: 98,
+				type: "item",
+				item: "create:mechanical_harvester"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 4.0d,
+			description: ["Mechanical bearings can be used to spin attached structures. Use chassis blocks, painted with slime, to build a structure. Machines like drills or harvesters that are attached to moving structures will work for free."],
+			dependencies: [I;85],
+			id: 99,
+			tasks: [{
+				id: 105,
+				type: "item",
+				item: "create:mechanical_bearing"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 4.0d,
+			description: ["You can use the storage interface to pull items out of a moving structure. The structure will pause to let the items transfer, then continue moving."],
+			dependencies: [I;99],
+			id: 101,
+			tasks: [{
+				id: 102,
+				type: "item",
+				item: "create:portable_storage_interface"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 2.0d,
+			description: ["Instead of using chassis blocks, you can superglue any block to any other block and make a moving structure out of that."],
+			dependencies: [I;101],
+			id: 103,
+			tasks: [{
+				id: 104,
+				type: "item",
+				item: {
+					id: "create:super_glue",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

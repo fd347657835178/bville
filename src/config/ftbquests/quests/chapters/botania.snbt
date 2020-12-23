@@ -1,0 +1,197 @@
+{
+	id: 27,
+	filename: "botania",
+	order_index: 5,
+	title: "Botania",
+	icon: "botania:white_mystical_flower",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.5d,
+			y: 0.5d,
+			description: ["Botania uses flowers to generate and store mana, which can be used for self-healing tools, item-attracting rings, and various vanilla-style automation setups."],
+			id: 49,
+			tasks: [{
+				id: 79,
+				type: "checkmark",
+				title: "Botania",
+				icon: "botania:white_mystical_flower"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 2.5d,
+			description: ["Used for crafting all the magic flowers. Fill with water from a bucket, then throw (with q) the required items in, then throw in a seed to finish crafting."],
+			dependencies: [I;114],
+			id: 112,
+			tasks: [{
+				id: 113,
+				type: "item",
+				item: "botania:apothecary_default"
+			}],
+			rewards: [{
+				id: 127,
+				type: "item",
+				item: "minecraft:water_bucket"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 0.5d,
+			description: [
+				"This book contains all the info you need to learn and use Botania, these quests are just an extra guide. It has all kinds of useful information, like this tidbit:",
+				"Colored petals can be planted, fertilized with bonemeal to turn them into tall flowers, harvested with shears, then crafted into two petals. Use this to maintain stores of every petal color."
+			],
+			dependencies: [I;49],
+			id: 114,
+			tasks: [{
+				id: 115,
+				type: "item",
+				item: "botania:lexicon"
+			}],
+			rewards: [{
+				id: 116,
+				type: "item",
+				item: "minecraft:bone_meal",
+				count: 8
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 2.5d,
+			description: ["When placed, this can convert logs into livingwood and stone (not cobblestone) into livingrock. Has other crafting recipes as well, hover over a daisy and press U, then look in the pure daisy tab."],
+			dependencies: [I;112],
+			id: 117,
+			tasks: [{
+				id: 118,
+				type: "item",
+				item: "botania:pure_daisy"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 4.5d,
+			description: ["Needed to store mana, and use it for crafting and other purposes. Throw items into the pool to craft them, if there's enough mana. Hold the wand to see the exact levels, or configure Botania machines."],
+			dependencies: [I;117],
+			id: 119,
+			tasks: [{
+				id: 120,
+				type: "item",
+				item: "botania:mana_pool"
+			}],
+			rewards: [{
+				id: 128,
+				type: "item",
+				item: {
+					id: "botania:twig_wand",
+					Count: true,
+					tag: {
+						color1: 0,
+						color2: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 4.5d,
+			description: ["Can be used to send mana from a generating flower to a mana pool, or from a mana pool to another mana pool. Make sure it is facing the mana pool, use the wand to point spreaders at pools they don't exactly face."],
+			dependencies: [I;119],
+			id: 121,
+			tasks: [{
+				id: 122,
+				type: "item",
+				item: "botania:mana_spreader"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 4.5d,
+			description: ["The endoflame is a generating flower that can consume burnable material and convert it into mana. Place a few near a mana spreader then drop coal nearby- the spreader will collect the mana and send it to the pool."],
+			dependencies: [I;121],
+			id: 123,
+			tasks: [{
+				id: 124,
+				type: "item",
+				item: "botania:endoflame"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 2.5d,
+			description: ["Now that your mana pool has mana, you can craft with it. Manasteel is used for many recipes, and can be made into tools. These tools have the same stats as iron, but much greater enchantability, and they can be repaired with mana."],
+			dependencies: [I;123],
+			id: 125,
+			tasks: [{
+				id: 126,
+				type: "item",
+				item: "botania:manasteel_ingot"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.5d,
+			description: [
+				"The tablet can store mana for portable use. Use it to transfer mana from one pool to another, or to power your personal tools and weapons. Throw them into mana pools to charge or discharge them, and use the wand to change modes.",
+				"Can be crafted into a ring so that your mana tablet isn't taking up inventory space."
+			],
+			dependencies: [I;125],
+			id: 129,
+			tasks: [{
+				id: 130,
+				type: "item",
+				item: {
+					id: "botania:mana_tablet",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 0.5d,
+			description: ["This ring can draw items towards you- it's equipped in the curios ring slots."],
+			dependencies: [I;125],
+			id: 131,
+			tasks: [{
+				id: 132,
+				type: "item",
+				item: {
+					id: "botania:magnet_ring",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 2.5d,
+			description: ["This hourglass can send redstone pulses on a timer- try using it to control a hopper that feeds an open crate that drops fuel onto the endoflames. The amount of sand controls the length of the timer."],
+			dependencies: [I;125],
+			id: 133,
+			tasks: [{
+				id: 134,
+				type: "item",
+				item: "botania:hourglass"
+			}],
+			rewards: [{
+				id: 137,
+				type: "item",
+				item: "minecraft:sand",
+				count: 64
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 4.5d,
+			description: ["If you place one of these under a mana pool, it gains the ability to craft many more recipes."],
+			dependencies: [I;125],
+			id: 135,
+			tasks: [{
+				id: 136,
+				type: "item",
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+	]
+}

@@ -1,0 +1,209 @@
+{
+	id: 25,
+	filename: "various",
+	order_index: 2,
+	title: "Various",
+	icon: "usefulbackpacks:backpack_small",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.5d,
+			y: 0.0d,
+			description: ["A backpack can hold extra items, and can be upgraded for extra storage. If you equip one in the Curios back slot, you can open your backpack with Z."],
+			id: 29,
+			tasks: [{
+				id: 30,
+				type: "item",
+				item: "usefulbackpacks:backpack_small"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 0.0d,
+			description: ["The Dank can hold large amounts of a few kinds of block. Upgrades improve not only number of item types but also max items per type. Use this to collect the cobblestone and dirt and such. Can also be set to construction mode with P to place blocks."],
+			id: 31,
+			tasks: [{
+				id: 32,
+				type: "item",
+				item: "dankstorage:dank_1"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 0.0d,
+			description: ["This block can use attached kitchen blocks or other adjacent storage to make food- useful with the large amount of ingredients and recipes. Kitchen appliances like a refridgerator and toaster and cow-in-a-jar are also obtainable."],
+			id: 33,
+			tasks: [{
+				id: 34,
+				type: "item",
+				item: "cookingforblockheads:cooking_table"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -2.0d,
+			description: ["Holds more than a normal barrel. Can be upgraded to hold even more items."],
+			id: 35,
+			tasks: [{
+				id: 36,
+				type: "item",
+				item: "metalbarrels:iron_barrel"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 2.0d,
+			description: ["This thing keeps a 3x3 area of chunks loaded even if nobody is around. Your loaders will turn off if you don't log in for a while- right click them to restart them spinning if this happens."],
+			id: 37,
+			tasks: [{
+				id: 38,
+				type: "item",
+				item: "weirdinggadget:weirding_gadget"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 2.0d,
+			description: [
+				"These drawers can each hold large amounts of single items. Right click to insert from hand, double right click to insert all matching items, left click to remove one, shift left click to remove a stack. Upgrades can increase drawer inventory.",
+				"Drawer Controllers can link all attached drawers. Double right click the controller to insert everything from your inventory to matching drawers. The Cooking Table and some other machines can pull items from a drawer controller or drawer slave."
+			],
+			id: 39,
+			tasks: [{
+				id: 40,
+				type: "item",
+				item: "storagedrawers:oak_full_drawers_1"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			description: ["These chests hold the same inventory as any other chest with the same color code. Right click the latch with a diamond to use your own personal chest network instead of the public one. There is a backpack that can be linked to the chests as well."],
+			id: 41,
+			tasks: [{
+				id: 42,
+				type: "item",
+				item: "enderstorage:ender_chest"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 2.0d,
+			description: ["This device can be set to find a specific biome, in any dimension."],
+			id: 43,
+			tasks: [{
+				id: 44,
+				type: "item",
+				item: {
+					id: "naturescompass:naturescompass",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -2.0d,
+			description: ["This is like a crafting table, except it can pull from a single adjacent inventory. Try using Iron Barrels for your crafting storage, it's the biggest one."],
+			id: 45,
+			tasks: [{
+				id: 46,
+				type: "item",
+				item: "craftingstation:crafting_station"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 2.0d,
+			description: ["It's a lever that looks like a torch. There's also bricks that hide a secret button."],
+			id: 68,
+			tasks: [{
+				id: 69,
+				type: "item",
+				item: "inspirations:torch_lever"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 4.0d,
+			description: ["You can put carpets on a trapdoor to hide it better. Carpets can also be placed over pressure plates and stairs."],
+			id: 70,
+			tasks: [{
+				id: 71,
+				type: "item",
+				item: "inspirations:white_carpeted_trapdoor"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 4.0d,
+			description: ["Cheaper and prettier than a hopper chain, but otherwise works the same. Needs a hopper at the front to send items in."],
+			id: 72,
+			tasks: [{
+				id: 73,
+				type: "item",
+				item: "inspirations:pipe"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -2.0d,
+			description: ["Clay armor has the same stats as leather, but is nicer to cows."],
+			id: 74,
+			tasks: [{
+				id: 75,
+				type: "item",
+				item: {
+					id: "ceramics:clay_chestplate",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -2.0d,
+			description: ["The postbox can be used to send items to any player's mailbox, if they have placed one."],
+			id: 76,
+			tasks: [{
+				id: 77,
+				type: "item",
+				item: "cfm:post_box"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 4.0d,
+			description: ["Waystones can be used for teleportation. Use a warp scroll or stone to teleport to a visited waystone, or right click a waystone to travel to any other one."],
+			id: 169,
+			tasks: [{
+				id: 170,
+				type: "item",
+				item: "waystones:waystone"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 4.0d,
+			description: [
+				"These wands can place many blocks quickly. Right click a block to place more blocks of the same type (or whatever's in your offhand) onto that side as well as any adjacent blocks of that type. Blocks in the inventory (or danks) will be used.",
+				"Shift-right click empty space to open the options screen, or shift and scroll to change placement modes. Higher tiers of wand (iron, diamond, nether star) can place more blocks and have more durability- the nether star wand is unbreakable."
+			],
+			id: 173,
+			tasks: [{
+				id: 174,
+				type: "item",
+				item: {
+					id: "constructionwand:stone_wand",
+					Count: true,
+					tag: {
+						wand_options: {},
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}
