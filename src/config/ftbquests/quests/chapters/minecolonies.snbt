@@ -26,7 +26,7 @@
 			y: 0.0d,
 			description: [
 				"The supply camp item places a supply camp in the world. It needs to be placed on flat ground, and its position can be previewed and adjusted before placement. There are multiple cosmetic options that may contain different blocks.",
-				"Every camp has a basic bed and crafting setup, plus a rack somewhere with a town hall and builders tool. You can only place one supply colony per player, so make very sure it's where you want it, far from other colonies."
+				"Every camp has a basic bed and crafting setup, plus a rack somewhere with a town hall and builders tool. You can only place one supply colony per player, so make very sure it's where you want it, far (10+ chunks) from other colonies."
 			],
 			dependencies: [I;51],
 			id: 138,
