@@ -104,7 +104,10 @@
 		{
 			x: -1.5d,
 			y: -2.0d,
-			description: ["This is like a crafting table, except it can pull from a single adjacent inventory. Try using Iron Barrels for your crafting storage, it's the biggest one."],
+			description: [
+				"This is like a crafting table, except it can pull from any adjacent inventory. Try using Iron Barrels for your crafting storage, it's the biggest one. Items placed in the grid will stay there, use the red square to clear it.",
+				'Very useful when paired with the "+" crafting in the U/R recipe menu.'
+			],
 			id: 45,
 			tasks: [{
 				id: 46,
@@ -201,6 +204,65 @@
 					tag: {
 						wand_options: {},
 						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -2.0d,
+			description: ["Grape seeds will result in a plant that has a bush on top of a stem. Place fences on opposite sides of the bush- the bush will spread to the fences and grapes will grow below. Each grape plant can support two fences."],
+			id: 179,
+			tasks: [{
+				id: 180,
+				type: "item",
+				item: "simplefarming:grapes"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			description: ["To get cheese slices, craft a Wheel of Cheese and place it in the world, then right click it."],
+			id: 181,
+			tasks: [{
+				id: 182,
+				type: "item",
+				item: "simplefarming:cheese_slice"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 2.0d,
+			description: ["This can be used to place colored text on a rope. Other items from the mod include lights and flags on string."],
+			id: 183,
+			tasks: [{
+				id: 184,
+				type: "item",
+				item: {
+					id: "fairylights:letter_bunting",
+					Count: true,
+					tag: {
+						text: {
+							styling: [I;],
+							value: ""
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 4.0d,
+			description: ["Holds books, makes you look smarter. Right click to add or remove books. Comes in Rainbow, Tomes, or Ancient variants as well that each display the books differently."],
+			id: 187,
+			tasks: [{
+				id: 188,
+				type: "item",
+				item: {
+					id: "inspirations:bookshelf",
+					Count: true,
+					tag: {
+						texture: "minecraft:oak_slab"
 					}
 				}
 			}]

@@ -4,6 +4,14 @@ import crafttweaker.api.data.MapData;
 import crafttweaker.api.data.ListData;
 import crafttweaker.api.data.IData;
 
+// construction tool & stone wand disambiguation
+craftingTable.removeRecipe(<item:structurize:sceptergold>);
+craftingTable.addShaped("build_tool_compatibility", 
+<item:structurize:sceptergold>, 
+[[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:gold_nugget>], 
+[<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>], 
+[<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:air>]], null);
+
 // Vanilla items
 craftingTable.addShaped("saddle", 
 <item:minecraft:saddle>, 

@@ -168,6 +168,33 @@
 				title: "Inventory Buttons",
 				icon: "minecraft:chest"
 			}]
+		},
+		{
+			x: -2.0d,
+			y: -3.5d,
+			description: [
+				'To the right of the inventory is a list of every item. Filter it with the search list, then hover an item and press "R" to see its recipe or "U" to see recipes that it is used in. Use "A" to favorite items, they are on the left.',
+				'Once you are looking at a recipe, use the "+" button to add one set of the recipe to a crafting table. Shift click the button to add as many ingredients as you have. Tabs on the recipe list show smelting and other types of crafting.'
+			],
+			id: 175,
+			tasks: [{
+				id: 176,
+				type: "checkmark",
+				title: "Recipes and Autocrafting",
+				icon: "minecraft:book"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.5d,
+			description: ["While pressing shift, right click a block such as a chest or spawner to pick it up. Right clicking again places the block. This is a convenient way to move blocks with large inventories like the high tier barrels."],
+			id: 177,
+			tasks: [{
+				id: 178,
+				type: "checkmark",
+				title: "Carrying Blocks",
+				icon: "minecraft:spawner"
+			}]
 		}
 	]
 }

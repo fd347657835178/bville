@@ -10,7 +10,7 @@
 			title: "Spider Caves",
 			x: 9.0d,
 			y: 4.0d,
-			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of caves, full of spiders but great for mining. It's also better at fast travel than the Nether."],
+			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of caves, full of spiders but great for mining."],
 			dependencies: [I;15],
 			id: 5,
 			tasks: [{

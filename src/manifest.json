@@ -1,12 +1,12 @@
 {
   "minecraft": {
     "version": "1.16.4",
-    "modLoaders": [{ "id": "forge-35.1.13", "primary": true }]
+    "modLoaders": [{ "id": "forge-35.1.28", "primary": true }]
   },
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "feltdome",
   "projectID": 430700,
   "name": "BVille",
@@ -57,14 +57,15 @@
     { "projectID": 233342, "fileID": 3134283, "required": true, "modnick": "Fairy Lights" },
     { "projectID": 258914, "fileID": 3116235, "required": true, "modnick": "The Weirding Gadget" },
     { "projectID": 309674, "fileID": 3132233, "required": true, "modnick": "Item Filters" },    
-    { "projectID": 411392, "fileID": 3147120, "required": true, "modnick": "Versatile Portals" },
-    { "projectID": 426641, "fileID": 3147105, "required": true, "modnick": "mrp Library" },
+    { "projectID": 411392, "fileID": 3153477, "required": true, "modnick": "Versatile Portals" },
+    { "projectID": 426641, "fileID": 3152420, "required": true, "modnick": "mrp Library" },
     { "projectID": 239197, "fileID": 3116045, "required": true, "modnick": "CraftTweaker" },
     { "projectID": 232131, "fileID": 3066044, "required": true, "modnick": "Default Options" },
     { "projectID": 237307, "fileID": 3100879, "required": true, "modnick": "Cosmetic Armor Reworked" },
     { "projectID": 251407, "fileID": 3066063, "required": true, "modnick": "Client Tweaks" },
     { "projectID": 399558, "fileID": 3132410, "required": true, "modnick": "Construction Wand" },
     { "projectID": 398623, "fileID": 3100290, "required": true, "modnick": "Flat Bedrock" },
-    { "projectID": 245755, "fileID": 3098215, "required": true, "modnick": "Waystones" }
+    { "projectID": 245755, "fileID": 3098215, "required": true, "modnick": "Waystones" },
+    { "projectID": 274259, "fileID": 3079317, "required": true, "modnick": "Carry On" }
   ]
 }
