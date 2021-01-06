@@ -266,6 +266,17 @@
 					}
 				}
 			}]
+		},
+		{
+			x: 6.5d,
+			y: -2.0d,
+			description: ["Spawners can be broken with silk touch, or crafted. Placed spawners will be empty, right click them with a spawn egg to spawn that mob. Right click a spawner to retrieve the egg. Mobs have a rare chance to drop their spawn egg."],
+			id: 189,
+			tasks: [{
+				id: 190,
+				type: "item",
+				item: "minecraft:spawner"
+			}]
 		}
 	]
 }

@@ -120,6 +120,12 @@ Because vanilla maps are expensive and fragile.
 **[Flat Bedrock](https://www.curseforge.com/minecraft/mc-mods/flat-bedrock)**
 I hate lumpy bedrock.
 
+**[Carry On](https://www.curseforge.com/minecraft/mc-mods/carry-on)**
+Makes moving huge inventories like diamond barrels much easier, along with moving mobs without bait and moving spawners intact.
+
+**[Enhanced Mob Spawners](https://www.curseforge.com/minecraft/mc-mods/enhanced-mob-spawners)**
+Easier mob spawners allow players to reduce the complexity (and thus server-intensiveness) of farming setups.
+
 ## purely technical
 
 **[Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)**

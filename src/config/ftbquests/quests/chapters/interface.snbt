@@ -187,12 +187,15 @@
 		{
 			x: 0.0d,
 			y: -3.5d,
-			description: ["While pressing shift, right click a block such as a chest or spawner to pick it up. Right clicking again places the block. This is a convenient way to move blocks with large inventories like the high tier barrels."],
+			description: [
+				"While pressing shift, right click a block such as a chest or spawner to pick it up. Right clicking again places the block. This is a convenient way to move blocks with large inventories like the high tier barrels.",
+				"Mobs such as cows and sheep can also be carried in this fashion."
+			],
 			id: 177,
 			tasks: [{
 				id: 178,
 				type: "checkmark",
-				title: "Carrying Blocks",
+				title: "Carrying Blocks and Mobs",
 				icon: "minecraft:spawner"
 			}]
 		}
