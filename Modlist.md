@@ -46,6 +46,12 @@ Find biomes without hassle.
 **[Construction Wand](https://www.curseforge.com/minecraft/mc-mods/construction-wand)**
 Build quickly in the early and late game.
 
+**[Resourceful Bees](https://www.curseforge.com/minecraft/mc-mods/resourceful-bees)**
+Adds a method for passive resource generation that is a little more interesting than resource generating crops or machines.
+
+**[The Bumblezone (Forge)](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge)**
+Adds a new dimension to find bees and bee accessories, including resources from Resourceful Bees.
+
 ## customization enablers
 **[FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests)**
 We can use a quest mod to add a guidebook that tracks progress.
@@ -171,3 +177,6 @@ Needed for Versatile Portals.
 
 **[Cloth Config API (Forge)](https://www.curseforge.com/minecraft/mc-mods/cloth-config-forge)**
 Needed for fallingtree.
+
+**[Architectury API (Forge)](https://www.curseforge.com/minecraft/mc-mods/architectury-forge)**
+Needed for FTB mods.

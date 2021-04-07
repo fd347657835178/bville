@@ -26,7 +26,14 @@ craftingTable.addShaped("saddle",
 [<item:minecraft:leather>, <item:minecraft:leather>, <item:minecraft:leather>], 
 [<item:minecraft:iron_nugget>, <item:minecraft:air>, <item:minecraft:iron_nugget>]], null);
 
-craftingTable.addShapeless("vanilla_chest", <item:minecraft:chest>, [<tag:forge:chests/wooden>]);
+craftingTable.addShapeless("vanilla_chest", <item:minecraft:chest>, [<tag:items:forge:chests/wooden>]);
+
+craftingTable.removeRecipe(<item:cfm:post_box>);
+craftingTable.addShaped("cheap_postbox", 
+<item:cfm:post_box>, 
+[[<item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>, <item:minecraft:iron_ingot>], 
+[<item:minecraft:iron_ingot>, <tag:items:forge:chests/wooden>, <item:minecraft:iron_ingot>], 
+[<item:minecraft:iron_ingot>, <item:minecraft:air>, <item:minecraft:iron_ingot>]], null);
 
 // Portal General Items
 craftingTable.removeRecipe(<item:versatileportals:portal_frame>);
@@ -56,13 +63,13 @@ craftingTable.addShaped("spidercave_world_control",
 
 craftingTable.addShaped("flatvillage_world_control", 
 <item:versatileportals:existing_world_control>.withTag({WorldID: "bv:flatvillage" as string, Color: 5185982 as int} as IData).setDisplayName("flatvillage"), 
-[[<item:minecraft:air>, <tag:minecraft:beds>, <item:minecraft:air>], 
-[<tag:minecraft:doors>, <item:minecraft:air>, <tag:minecraft:doors>], 
+[[<item:minecraft:air>, <tag:items:minecraft:beds>, <item:minecraft:air>], 
+[<tag:items:minecraft:doors>, <item:minecraft:air>, <tag:items:minecraft:doors>], 
 [<item:minecraft:air>, <item:minecraft:stone>, <item:minecraft:air>]], null);
 
 craftingTable.addShaped("astraljungle_world_control", 
 <item:versatileportals:existing_world_control>.withTag({WorldID: "bv:astraljungle" as string, Color: 9747697 as int} as IData).setDisplayName("astraljungle"), 
-[[<item:minecraft:air>, <tag:minecraft:saplings>, <item:minecraft:air>], 
+[[<item:minecraft:air>, <tag:items:minecraft:saplings>, <item:minecraft:air>], 
 [<item:minecraft:glowstone_dust>, <item:minecraft:air>, <item:minecraft:glowstone_dust>], 
 [<item:minecraft:air>, <item:minecraft:stone>, <item:minecraft:air>]], null);
 
