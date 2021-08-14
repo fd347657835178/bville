@@ -6,7 +6,7 @@
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.0.8",
+  "version": "0.0.8d",
   "author": "feltdome",
   "projectID": 430700,
   "name": "BVille",
@@ -69,8 +69,10 @@
     { "projectID": 245755, "fileID": 3332276, "required": true, "modnick": "Waystones" },
     { "projectID": 274259, "fileID": 3339353, "required": true, "modnick": "Carry On" },
     { "projectID": 321663, "fileID": 3420044, "required": true, "modnick": "Enhanced Mob Spawners" },
-    { "projectID": 384508, "fileID": 3425114, "required": true, "modnick": "Resourceful Bees" },
+    { "projectID": 384508, "fileID": 3281371, "required": true, "modnick": "Resourceful Bees" },
     { "projectID": 362479, "fileID": 3415404, "required": true, "modnick": "The Bumblezone (Forge)" },
-    { "projectID": 419699, "fileID": 3385660, "required": true, "modnick": "Architectury API (Forge)" }
+    { "projectID": 419699, "fileID": 3385660, "required": true, "modnick": "Architectury API (Forge)" },
+    { "projectID": 264231, "fileID": 3361256, "required": true, "modnick": "Ice and Fire: Dragons" },
+    { "projectID": 331936, "fileID": 3414574, "required": true, "modnick": "Citadel" }
   ]
 }
