@@ -180,3 +180,6 @@ Needed for fallingtree.
 
 **[Architectury API (Forge)](https://www.curseforge.com/minecraft/mc-mods/architectury-forge)**
 Needed for FTB mods.
+
+**[Flywheel](https://www.curseforge.com/minecraft/mc-mods/flywheel)**
+Needed for Create.

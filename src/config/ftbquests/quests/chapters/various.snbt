@@ -1,164 +1,190 @@
 {
-	id: 25,
+	id: "0000000000000019",
+	group: "",
+	order_index: 1,
 	filename: "various",
-	order_index: 2,
 	title: "Various",
 	icon: "usefulbackpacks:backpack_small",
 	default_quest_shape: "",
 	quests: [
 		{
-			x: 0.5d,
-			y: 0.0d,
+			x: 2.5d,
+			y: -4.0d,
 			description: ["A backpack can hold extra items, and can be upgraded for extra storage. If you equip one in the Curios back slot, you can open your backpack with Z."],
-			id: 29,
+			dependencies: ["000000000000002D"],
+			id: "000000000000001D",
 			tasks: [{
-				id: 30,
+				id: "000000000000001E",
 				type: "item",
 				item: "usefulbackpacks:backpack_small"
 			}]
 		},
 		{
 			x: 2.5d,
-			y: 0.0d,
+			y: -6.0d,
 			description: ["The Dank can hold large amounts of a few kinds of block. Upgrades improve not only number of item types but also max items per type. Use this to collect the cobblestone and dirt and such. Can also be set to construction mode with P to place blocks."],
-			id: 31,
+			dependencies: ["000000000000001D"],
+			id: "000000000000001F",
 			tasks: [{
-				id: 32,
+				id: "0000000000000020",
 				type: "item",
 				item: "dankstorage:dank_1"
 			}]
 		},
 		{
-			x: -3.5d,
-			y: 0.0d,
-			description: ["This block can use attached kitchen blocks or other adjacent storage to make food- useful with the large amount of ingredients and recipes. Kitchen appliances like a refridgerator and toaster and cow-in-a-jar are also obtainable."],
-			id: 33,
+			x: 4.5d,
+			y: -2.0d,
+			description: ["This block can use attached kitchen blocks or other adjacent storage to make food- useful with the large amount of ingredients and recipes. Kitchen appliances like a refridgerator and toaster and oven are also obtainable."],
+			dependencies: ["000000000000002D"],
+			id: "0000000000000021",
 			tasks: [{
-				id: 34,
+				id: "0000000000000022",
 				type: "item",
 				item: "cookingforblockheads:cooking_table"
+			}],
+			rewards: [{
+				id: "40E86B69249D20D6",
+				type: "item",
+				item: "cookingforblockheads:fridge",
+				count: 2
 			}]
 		},
 		{
 			x: 0.5d,
 			y: -2.0d,
 			description: ["Holds more than a normal barrel. Can be upgraded to hold even more items."],
-			id: 35,
+			dependencies: ["000000000000002D"],
+			id: "0000000000000023",
 			tasks: [{
-				id: 36,
+				id: "0000000000000024",
 				type: "item",
 				item: "metalbarrels:iron_barrel"
 			}]
 		},
 		{
-			x: -3.5d,
-			y: 2.0d,
+			x: -1.5d,
+			y: -3.5d,
 			description: ["This thing keeps a 3x3 area of chunks loaded even if nobody is around. Your loaders will turn off if you don't log in for a while- right click them to restart them spinning if this happens."],
-			id: 37,
+			dependencies: ["000000000000002D"],
+			id: "0000000000000025",
 			tasks: [{
-				id: 38,
+				id: "0000000000000026",
 				type: "item",
 				item: "weirdinggadget:weirding_gadget"
 			}]
 		},
 		{
 			x: -1.5d,
-			y: 2.0d,
+			y: 0.0d,
 			description: [
 				"These drawers can each hold large amounts of single items. Right click to insert from hand, double right click to insert all matching items, left click to remove one, shift left click to remove a stack. Upgrades can increase drawer inventory.",
 				"Drawer Controllers can link all attached drawers. Double right click the controller to insert everything from your inventory to matching drawers. The Cooking Table and some other machines can pull items from a drawer controller or drawer slave."
 			],
-			id: 39,
+			dependencies: ["0000000000000023"],
+			id: "0000000000000027",
 			tasks: [{
-				id: 40,
+				id: "0000000000000028",
 				type: "item",
-				item: "storagedrawers:oak_full_drawers_1"
-			}]
-		},
-		{
-			x: -1.5d,
-			y: 0.0d,
-			description: ["These chests hold the same inventory as any other chest with the same color code. Right click the latch with a diamond to use your own personal chest network instead of the public one. There is a backpack that can be linked to the chests as well."],
-			id: 41,
-			tasks: [{
-				id: 42,
-				type: "item",
-				item: "enderstorage:ender_chest"
-			}]
-		},
-		{
-			x: 2.5d,
-			y: 2.0d,
-			description: ["This device can be set to find a specific biome, in any dimension."],
-			id: 43,
-			tasks: [{
-				id: 44,
-				type: "item",
+				title: "Storage Drawers",
 				item: {
-					id: "naturescompass:naturescompass",
-					Count: true,
-					tag: {}
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "storagedrawers:drawers"
+					}
 				}
 			}]
 		},
 		{
 			x: -1.5d,
+			y: 2.0d,
+			description: ["These chests hold the same inventory as any other chest with the same color code. Right click the latch with a diamond to use your own personal chest network instead of the public one. There is a backpack that can be linked to the chests as well."],
+			dependencies: ["0000000000000027"],
+			id: "0000000000000029",
+			tasks: [{
+				id: "000000000000002A",
+				type: "item",
+				item: "enderstorage:ender_chest"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -4.0d,
+			description: ["This device can be set to find a specific biome, in any dimension."],
+			dependencies: ["000000000000004A"],
+			id: "000000000000002B",
+			tasks: [{
+				id: "000000000000002C",
+				type: "item",
+				item: {
+					id: "naturescompass:naturescompass",
+					Count: 1b,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 2.5d,
 			y: -2.0d,
 			description: [
-				"This is like a crafting table, except it can pull from any adjacent inventory. Try using Iron Barrels for your crafting storage, it's the biggest one. Items placed in the grid will stay there, use the red square to clear it.",
-				'Very useful when paired with the "+" crafting in the U/R recipe menu.'
+				"This is like a crafting table, except it can pull from any adjacent inventory. Try using metal barrels for your crafting storage. Items placed in the grid will stay there, use the red square to clear it.",
+				'Very useful when paired with the "+" crafting in JEI (the U/R recipe menu).'
 			],
-			id: 45,
+			id: "000000000000002D",
 			tasks: [{
-				id: 46,
+				id: "000000000000002E",
 				type: "item",
 				item: "craftingstation:crafting_station"
 			}]
 		},
 		{
-			x: 0.5d,
+			x: 4.5d,
 			y: 2.0d,
 			description: ["It's a lever that looks like a torch. There's also bricks that hide a secret button."],
-			id: 68,
+			dependencies: ["0000000000000046"],
+			id: "0000000000000044",
 			tasks: [{
-				id: 69,
+				id: "0000000000000045",
 				type: "item",
 				item: "inspirations:torch_lever"
 			}]
 		},
 		{
-			x: 0.5d,
-			y: 4.0d,
+			x: 2.5d,
+			y: 2.0d,
 			description: ["You can put carpets on a trapdoor to hide it better. Carpets can also be placed over pressure plates and stairs."],
-			id: 70,
+			dependencies: ["00000000000000AD"],
+			id: "0000000000000046",
 			tasks: [{
-				id: 71,
+				id: "0000000000000047",
 				type: "item",
 				item: "inspirations:white_carpeted_trapdoor"
 			}]
 		},
 		{
 			x: -1.5d,
-			y: 4.0d,
+			y: -2.0d,
 			description: ["Cheaper and prettier than a hopper chain, but otherwise works the same. Needs a hopper at the front to send items in."],
-			id: 72,
+			dependencies: ["0000000000000023"],
+			id: "0000000000000048",
 			tasks: [{
-				id: 73,
+				id: "0000000000000049",
 				type: "item",
 				item: "inspirations:pipe"
 			}]
 		},
 		{
-			x: -3.5d,
-			y: -2.0d,
+			x: 4.5d,
+			y: -4.0d,
 			description: ["Clay armor has the same stats as leather, but is nicer to cows."],
-			id: 74,
+			dependencies: ["000000000000002D"],
+			id: "000000000000004A",
 			tasks: [{
-				id: 75,
+				id: "000000000000004B",
 				type: "item",
 				item: {
 					id: "ceramics:clay_chestplate",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -166,41 +192,49 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: -2.0d,
+			x: 0.5d,
+			y: 0.0d,
 			description: ["The postbox can be used to send items to any player's mailbox, if they have placed one."],
-			id: 76,
+			dependencies: ["0000000000000023"],
+			id: "000000000000004C",
 			tasks: [{
-				id: 77,
+				id: "000000000000004D",
 				type: "item",
 				item: "cfm:post_box"
+			}],
+			rewards: [{
+				id: "11B2DE2A7E323D29",
+				type: "item",
+				item: "cfm:warped_mail_box"
 			}]
 		},
 		{
-			x: 2.5d,
-			y: 4.0d,
-			description: ["Waystones can be used for teleportation. Use a warp scroll or stone to teleport to a visited waystone, or right click a waystone to travel to any other one."],
-			id: 169,
+			x: 0.0d,
+			y: -3.5d,
+			description: ["Waystones can be used for teleportation once you activate one by right clicking. Use a warp scroll or stone to teleport to a visited waystone, or right click a waystone to travel to any other one you've already been to."],
+			dependencies: ["000000000000002D"],
+			id: "00000000000000A9",
 			tasks: [{
-				id: 170,
+				id: "00000000000000AA",
 				type: "item",
 				item: "waystones:waystone"
 			}]
 		},
 		{
-			x: -3.5d,
-			y: 4.0d,
+			x: 2.5d,
+			y: 0.0d,
 			description: [
 				"These wands can place many blocks quickly. Right click a block to place more blocks of the same type (or whatever's in your offhand) onto that side as well as any adjacent blocks of that type. Blocks in the inventory (or danks) will be used.",
 				"Shift-right click empty space to open the options screen, or shift and scroll to change placement modes. Higher tiers of wand (iron, diamond, nether star) can place more blocks and have more durability- the nether star wand is unbreakable."
 			],
-			id: 173,
+			dependencies: ["000000000000002D"],
+			id: "00000000000000AD",
 			tasks: [{
-				id: 174,
+				id: "00000000000000AE",
 				type: "item",
 				item: {
 					id: "constructionwand:stone_wand",
-					Count: true,
+					Count: 1b,
 					tag: {
 						wand_options: {},
 						Damage: 0
@@ -209,12 +243,13 @@
 			}]
 		},
 		{
-			x: 4.5d,
-			y: -2.0d,
-			description: ["Grape seeds will result in a plant that has a bush on top of a stem. Place fences on opposite sides of the bush- the bush will spread to the fences and grapes will grow below. Each grape plant can support two fences."],
-			id: 179,
+			x: 6.5d,
+			y: 2.0d,
+			description: ["Grape seeds will result in a plant that has a bush on top of a stem. Place fences on the sides of the bush- the bush will spread to the fences and grapes will grow below. Each grape plant can support four fences."],
+			dependencies: ["00000000000000B5"],
+			id: "00000000000000B3",
 			tasks: [{
-				id: 180,
+				id: "00000000000000B4",
 				type: "item",
 				item: "simplefarming:grapes"
 			}]
@@ -223,24 +258,26 @@
 			x: 4.5d,
 			y: 0.0d,
 			description: ["To get cheese slices, craft a Wheel of Cheese and place it in the world, then right click it."],
-			id: 181,
+			dependencies: ["0000000000000021"],
+			id: "00000000000000B5",
 			tasks: [{
-				id: 182,
+				id: "00000000000000B6",
 				type: "item",
 				item: "simplefarming:cheese_slice"
 			}]
 		},
 		{
-			x: 4.5d,
-			y: 2.0d,
+			x: 1.0d,
+			y: -6.0d,
 			description: ["This can be used to place colored text on a rope. Other items from the mod include lights and flags on string."],
-			id: 183,
+			dependencies: ["000000000000002D"],
+			id: "00000000000000B7",
 			tasks: [{
-				id: 184,
+				id: "00000000000000B8",
 				type: "item",
 				item: {
 					id: "fairylights:letter_bunting",
-					Count: true,
+					Count: 1b,
 					tag: {
 						text: {
 							styling: [I;],
@@ -251,31 +288,106 @@
 			}]
 		},
 		{
-			x: 4.5d,
-			y: 4.0d,
-			description: ["Holds books, makes you look smarter. Right click to add or remove books. Comes in Rainbow, Tomes, or Ancient variants as well that each display the books differently."],
-			id: 187,
+			x: 0.5d,
+			y: 2.0d,
+			description: ["Displays books and other items. Right click to add or remove items. Comes in Rainbow, Tomes, or Ancient variants as well that each display the books differently."],
+			dependencies: ["0000000000000027"],
+			id: "00000000000000BB",
 			tasks: [{
-				id: 188,
+				id: "00000000000000BC",
 				type: "item",
+				title: "Shelves",
 				item: {
-					id: "inspirations:bookshelf",
-					Count: true,
+					id: "itemfilters:tag",
+					Count: 1b,
 					tag: {
-						texture: "minecraft:oak_slab"
+						value: "inspirations:bookshelves"
 					}
 				}
 			}]
 		},
 		{
+			x: 1.0d,
+			y: -4.5d,
+			description: ["Sharestones can be used for teleportation without requiring you to visit the places beforehand. Each stone can only teleport to ones of the same color, but otherwise there is no limit."],
+			dependencies: ["000000000000002D"],
+			id: "1A56DA3BFDABBAA8",
+			tasks: [{
+				id: "095C5B9F4AD59A82",
+				type: "item",
+				item: "waystones:sharestone"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -6.0d,
+			description: ["Paired warp plates enable teleportation between them just by standing on one. Place a plate and right click it to get its Attuned Shard. Swap shards between two plates to enable teleportation between them."],
+			dependencies: [
+				"1A56DA3BFDABBAA8",
+				"00000000000000A9"
+			],
+			dependency_requirement: "one_completed",
+			id: "257ACE1FA73E8F5E",
+			tasks: [{
+				id: "5D46A666889892C9",
+				type: "item",
+				item: "waystones:warp_plate"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: -6.0d,
+			description: [
+				"These can carry fluids out of cisterns and into other blocks- right click the side of the channel to change between connection types.",
+				"You have to use these to add fluid to certain blocks, like Honey Tanks and Beecons."
+			],
+			dependencies: ["4D3A634A5977BA54"],
+			id: "36BDEC37CAFC8091",
+			tasks: [{
+				id: "2E3C98B573CC1C93",
+				type: "item",
+				item: "ceramics:terracotta_channel"
+			}],
+			rewards: [{
+				id: "09CEFAA3B9302A1F",
+				type: "item",
+				item: "ceramics:terracotta_faucet"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -6.0d,
+			description: ["These can hold liquids, and are a lot cheaper than the other methods. Use porcelain if you want to carry hot liquids like lava."],
+			dependencies: ["000000000000004A"],
+			id: "4D3A634A5977BA54",
+			tasks: [{
+				id: "543CECB38B12480D",
+				type: "item",
+				item: "ceramics:terracotta_cistern"
+			}]
+		},
+		{
 			x: 6.5d,
 			y: -2.0d,
-			description: ["Spawners can be broken with silk touch, or crafted. Placed spawners will be empty, right click them with a spawn egg to spawn that mob. Right click a spawner to retrieve the egg. Mobs have a rare chance to drop their spawn egg."],
-			id: 189,
+			description: ["An endless source of milk that refills over time. Created by compressing a cow into an appropriate container using an anvil."],
+			dependencies: ["0000000000000021"],
+			id: "2C480EDEED9CA195",
 			tasks: [{
-				id: 190,
+				id: "305405DA7EEE9943",
 				type: "item",
-				item: "minecraft:spawner"
+				item: "cookingforblockheads:cow_jar"
+			}]
+		},
+		{
+			x: 6.5d,
+			y: 0.0d,
+			description: ["Enables your oven to cook using electricity instead of fuel items. Electricity is hard to get though... you'd need a Honey Generator or Mana Fluxfield."],
+			dependencies: ["0000000000000021"],
+			id: "74AC8C5ED8DEB0F3",
+			tasks: [{
+				id: "60690525CB3B6D84",
+				type: "item",
+				item: "cookingforblockheads:heating_unit"
 			}]
 		}
 	]

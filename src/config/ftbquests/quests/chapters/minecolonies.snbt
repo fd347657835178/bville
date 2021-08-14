@@ -1,7 +1,8 @@
 {
-	id: 28,
+	id: "000000000000001C",
+	group: "",
+	order_index: 5,
 	filename: "minecolonies",
-	order_index: 6,
 	title: "Minecolonies",
 	icon: "structurize:sceptergold",
 	default_quest_shape: "",
@@ -13,9 +14,9 @@
 				"Minecolonies lets you direct NPCs to construct a colony, gather resources, and defend it from enemies. Includes a permission system to claim land, so do not dismount a horse in someone else's colony.",
 				"The colony will consume hundreds of blocks of resources before it starts producing any, so you should wait until you have an established base before adding a colony to it."
 			],
-			id: 51,
+			id: "0000000000000033",
 			tasks: [{
-				id: 80,
+				id: "0000000000000050",
 				type: "checkmark",
 				title: "Minecolonies",
 				icon: "structurize:sceptergold"
@@ -28,10 +29,10 @@
 				"The supply camp item places a supply camp in the world. It needs to be placed on flat ground, and its position can be previewed and adjusted before placement. There are multiple cosmetic options that may contain different blocks.",
 				"Every camp has a basic bed and crafting setup, plus a rack somewhere with a town hall and builders tool. You can only place one supply colony per player, so make very sure it's where you want it, far (10+ chunks) from other colonies."
 			],
-			dependencies: [I;51],
-			id: 138,
+			dependencies: ["0000000000000033"],
+			id: "000000000000008A",
 			tasks: [{
-				id: 139,
+				id: "000000000000008B",
 				type: "item",
 				item: "minecolonies:supplycampdeployer"
 			}]
@@ -43,10 +44,10 @@
 				"Your colony takes up a lot of space, and will grow even larger. This space will all be protected by the colony owner, and nobody else can place or remove blocks, or use any blocks, or mount any horses.",
 				"The defaults can be changed by the colony owner so that strangers aren't restricted, but it's still smarter to take care not to dismount or fall in a pit when passing through someone else's colony."
 			],
-			dependencies: [I;138],
-			id: 140,
+			dependencies: ["000000000000008A"],
+			id: "000000000000008C",
 			tasks: [{
-				id: 141,
+				id: "000000000000008D",
 				type: "checkmark",
 				title: "Permissions",
 				icon: "minecraft:barrier"
@@ -59,10 +60,10 @@
 				"The town hall is the block that creates a colony. Place it in the world with the build tool, then right click it to confirm the colony and rename it. NPCs will begin to spawn around the town hall block once a colony is founded.",
 				"If you can't place a colony, you're probably too close to someone else's colony. The distance is very large because the colonies can grow. Only the supply camp needs flat ground, the other buildings will have the floor leveled or raised as needed."
 			],
-			dependencies: [I;140],
-			id: 142,
+			dependencies: ["000000000000008C"],
+			id: "000000000000008E",
 			tasks: [{
-				id: 143,
+				id: "000000000000008F",
 				type: "item",
 				item: "minecolonies:blockhuttownhall"
 			}]
@@ -74,10 +75,10 @@
 				"NPCs need to sleep, eat, and not get sick or killed. Make a tavern or houses for them to sleep in, open their inventory and give them food directly or build a restaurant, give them the requested medicine or build a hospital if they get sick.",
 				"Once a colony grows large enough, hostile raids will occasionally spawn to attack it."
 			],
-			dependencies: [I;142],
-			id: 144,
+			dependencies: ["000000000000008E"],
+			id: "0000000000000090",
 			tasks: [{
-				id: 145,
+				id: "0000000000000091",
 				type: "checkmark",
 				title: "NPC Care",
 				icon: "minecraft:bread"
@@ -90,19 +91,19 @@
 				"The builder's hut is the first minecolony building you will actually build. Make and place the hut with the wand, then right click the hut block and select build options, then build building.",
 				"Then, the builder NPC will request tools and blocks. Give them to the NPC's inventory and the building will slowly take shape. Right click the hut block with the resource scroll to see the needed items at a distance."
 			],
-			dependencies: [I;144],
-			id: 146,
+			dependencies: ["0000000000000090"],
+			id: "0000000000000092",
 			tasks: [{
-				id: 147,
+				id: "0000000000000093",
 				type: "item",
 				item: "minecolonies:blockhutbuilder"
 			}],
 			rewards: [{
-				id: 168,
+				id: "00000000000000A8",
 				type: "item",
 				item: {
 					id: "minecolonies:resourcescroll",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}]
@@ -111,10 +112,10 @@
 			x: -2.0d,
 			y: -2.0d,
 			description: ["The tavern will provide beds to your NPCs as well as attracting visiting NPCs that can be recruited to the colony. Since the colonists can be fed and healed manually, this is a good first building once the builder's hut is complete."],
-			dependencies: [I;146],
-			id: 148,
+			dependencies: ["0000000000000092"],
+			id: "0000000000000094",
 			tasks: [{
-				id: 149,
+				id: "0000000000000095",
 				type: "item",
 				item: "minecolonies:blockhuttavern"
 			}]
@@ -123,10 +124,10 @@
 			x: 2.0d,
 			y: -4.0d,
 			description: ["The fisher's hut is a simpler way to get food than farms and fields. Just give them a pole and watch the fish (and junk) pour in."],
-			dependencies: [I;148],
-			id: 150,
+			dependencies: ["0000000000000094"],
+			id: "0000000000000096",
 			tasks: [{
-				id: 151,
+				id: "0000000000000097",
 				type: "item",
 				item: "minecolonies:blockhutfisherman"
 			}]
@@ -135,10 +136,10 @@
 			x: 0.0d,
 			y: -4.0d,
 			description: ["A forester will chop (and plant) trees for you."],
-			dependencies: [I;148],
-			id: 152,
+			dependencies: ["0000000000000094"],
+			id: "0000000000000098",
 			tasks: [{
-				id: 153,
+				id: "0000000000000099",
 				type: "item",
 				item: "minecolonies:blockhutlumberjack"
 			}]
@@ -147,10 +148,10 @@
 			x: -2.0d,
 			y: -4.0d,
 			description: ["Houses provide beds to colonists once the tavern is full. They are also needed for children to be born in the colony, but watch your population growth as it will trigger raids. Upgraded houses have more beds per house."],
-			dependencies: [I;148],
-			id: 154,
+			dependencies: ["0000000000000094"],
+			id: "000000000000009A",
 			tasks: [{
-				id: 155,
+				id: "000000000000009B",
 				type: "item",
 				item: "minecolonies:blockhutcitizen"
 			}]
@@ -159,10 +160,10 @@
 			x: 0.0d,
 			y: -2.0d,
 			description: ["The warehouse can store massive amounts of goods, but each colony can only have one. So make sure it's centrally located for logistical convenience. It's kind of useless on its own, but once you add couriers it's one of the best buildings."],
-			dependencies: [I;148],
-			id: 156,
+			dependencies: ["0000000000000094"],
+			id: "000000000000009C",
 			tasks: [{
-				id: 157,
+				id: "000000000000009D",
 				type: "item",
 				item: "minecolonies:blockhutwarehouse"
 			}]
@@ -171,10 +172,10 @@
 			x: 2.0d,
 			y: -2.0d,
 			description: ["Couriers will collect goods from other buildings and deliver tools and raw materials as needed. Just dump everything in the warehouse and the couriers will take care of it. You can also build a postbox so you can request items out of the warehouse."],
-			dependencies: [I;156],
-			id: 158,
+			dependencies: ["000000000000009C"],
+			id: "000000000000009E",
 			tasks: [{
-				id: 159,
+				id: "000000000000009F",
 				type: "item",
 				item: "minecolonies:blockhutdeliveryman"
 			}]
@@ -183,10 +184,10 @@
 			x: -4.0d,
 			y: -2.0d,
 			description: ["The restaraunt allows your NPCs to feed themselves. It can be configured to cook food, or just serve up meals from inventory."],
-			dependencies: [I;148],
-			id: 160,
+			dependencies: ["0000000000000094"],
+			id: "00000000000000A0",
 			tasks: [{
-				id: 161,
+				id: "00000000000000A1",
 				type: "item",
 				item: "minecolonies:blockhutcook"
 			}]
@@ -195,10 +196,10 @@
 			x: -4.0d,
 			y: -4.0d,
 			description: ["The university allows you to research more buildings and upgrade your colonists. Each research takes real-world time, so it's best to start early."],
-			dependencies: [I;148],
-			id: 162,
+			dependencies: ["0000000000000094"],
+			id: "00000000000000A2",
 			tasks: [{
-				id: 163,
+				id: "00000000000000A3",
 				type: "item",
 				item: "minecolonies:blockhutuniversity"
 			}]
@@ -207,10 +208,10 @@
 			x: -4.0d,
 			y: 0.0d,
 			description: ["The guard tower will expand your territory and add a guard to patrol the colony. Note that guards need all equipment provided to them."],
-			dependencies: [I;148],
-			id: 164,
+			dependencies: ["0000000000000094"],
+			id: "00000000000000A4",
 			tasks: [{
-				id: 165,
+				id: "00000000000000A5",
 				type: "item",
 				item: "minecolonies:blockhutguardtower"
 			}]

@@ -1,0 +1,172 @@
+{
+	id: "6FD7A5E1C4CE70DE",
+	group: "",
+	order_index: 6,
+	filename: "corail_tombstone",
+	title: "Graves and Eggs",
+	icon: {
+		id: "tombstone:decorative_grave_normal",
+		Count: 1b,
+		tag: {
+			model_texture: 1
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -0.5d,
+			y: -0.5d,
+			description: ["This is the basic crafting ingredient for Corail Tombstone recipes. It drops from undead mobs rarely."],
+			id: "41A5DCB800E7AC92",
+			tasks: [{
+				id: "1F9316F5F75F2638",
+				type: "item",
+				item: "tombstone:grave_dust"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -2.5d,
+			description: ["Spawners can be crafted from grave dust- you still have to use silk touch or block carrying to move one though. Placed spawners will be empty and nonfunctional until eggs are used."],
+			dependencies: ["41A5DCB800E7AC92"],
+			id: "5D98F6F6F3599DB5",
+			tasks: [{
+				id: "6936F520887CC35F",
+				type: "item",
+				item: "minecraft:spawner"
+			}],
+			rewards: [{
+				id: "7873BA4908C4CA55",
+				type: "item",
+				item: "tombstone:grave_dust",
+				count: 4
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 1.5d,
+			description: ["Decorative graves are needed for many magic rituals. After they are placed, eventually a soul will haunt one. Some rituals can be done with any grave, but the majority need a soul present. It may be a good idea to construct a graveyard if you cast a lot."],
+			dependencies: ["41A5DCB800E7AC92"],
+			id: "7B84C0DF425D2C04",
+			tasks: [{
+				id: "5CEA47BE0B77EE35",
+				type: "item",
+				title: "Decorative Graves",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "tombstone:decorative_graves"
+					}
+				}
+			}],
+			rewards: [{
+				id: "6AF61B3F27EF6F1F",
+				type: "item",
+				item: "tombstone:grave_dust",
+				count: 4
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -2.5d,
+			description: ["Spawners have eggs now! Right click a spawner with a mob's spawn egg to change the spawner to spawn that mob. Right click again and the spawner will drop the egg. All mobs have a rare chance to drop their spawn egg."],
+			dependencies: ["5D98F6F6F3599DB5"],
+			id: "20DB22A6A006A211",
+			tasks: [{
+				id: "3FD9922C1757D5D5",
+				type: "item",
+				item: "minecraft:chicken_spawn_egg"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -2.5d,
+			description: ["If you right click on a spawner with a spawner key, you will be able to change the spawner's range, mob count, and speed, as well as turning it off."],
+			dependencies: ["5D98F6F6F3599DB5"],
+			id: "763C0154143D7702",
+			tasks: [{
+				id: "77A7762CC017D85A",
+				type: "item",
+				item: "spawnermod:spawner_key"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 1.5d,
+			description: ["The Ankh can be used on a grave to gain Knowledge of Death. Press H to view the Knowledge of Death menu and spend it on perks or view the compendium. It can also be gained by enchanting items or completing Corail advancements."],
+			dependencies: ["7B84C0DF425D2C04"],
+			id: "362E37FDA00D6A43",
+			tasks: [{
+				id: "4414607465E0B16E",
+				type: "item",
+				item: {
+					id: "tombstone:ankh_of_pray",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 1.5d,
+			description: ["The Book of Disenchantment can be used to remove enchantments from items as enchantment books. A Perk determines how many of the enchantments you can remove successfully."],
+			dependencies: ["7B84C0DF425D2C04"],
+			id: "77A567BA1441BC87",
+			tasks: [{
+				id: "7C2FADFE2D0FB0F3",
+				type: "item",
+				item: "tombstone:book_of_disenchantment"
+			}]
+		},
+		{
+			title: "Grave Plate",
+			x: -0.5d,
+			y: 3.5d,
+			description: ["Can be hung on a grave to add a custom message. Renaming this with an anvil allows you to change its text."],
+			dependencies: ["7B84C0DF425D2C04"],
+			id: "7B2B62F77F04B147",
+			tasks: [{
+				id: "15D3F31F14E7A645",
+				type: "item",
+				item: "tombstone:grave_plate"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.5d,
+			description: ["A crafting material. Used to make various powerful items."],
+			dependencies: ["7B84C0DF425D2C04"],
+			id: "48B03F1B13A3F780",
+			tasks: [{
+				id: "403CB204DE67F26F",
+				type: "item",
+				item: "tombstone:strange_scroll"
+			}],
+			rewards: [{
+				id: "75903DBB41280BB9",
+				type: "item",
+				item: "tombstone:strange_scroll"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 3.5d,
+			description: ["A crafting material. Used to make various powerful items."],
+			dependencies: ["7B84C0DF425D2C04"],
+			id: "0335DBE8B4DD026E",
+			tasks: [{
+				id: "5BE950885CB818EA",
+				type: "item",
+				item: "tombstone:strange_tablet"
+			}],
+			rewards: [{
+				id: "4A1431882E9BB6A6",
+				type: "item",
+				item: "tombstone:strange_tablet"
+			}]
+		}
+	]
+}
