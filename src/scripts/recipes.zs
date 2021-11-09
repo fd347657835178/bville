@@ -12,12 +12,17 @@ craftingTable.addShaped("build_tool_compatibility",
 [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>], 
 [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:air>]], null);
 
-// empty mob spawner
+// Workaround for uncraftable
 craftingTable.addShaped("empty_spawner", 
 <item:minecraft:spawner>, 
 [[<item:minecraft:obsidian>, <item:minecraft:iron_bars>, <item:minecraft:obsidian>], 
 [<item:minecraft:iron_bars>, <item:tombstone:grave_dust>, <item:minecraft:iron_bars>], 
 [<item:minecraft:obsidian>, <item:minecraft:iron_bars>, <item:minecraft:obsidian>]], null);
+
+// Workaround for rarity
+craftingTable.addShapeless("essence_of_undeath", 
+<item:tombstone:essence_of_undeath> * 2, 
+[<item:botania:vial>, <item:tombstone:impregnated_diamond>, <item:tombstone:tablet_of_cupidity>, <item:minecraft:rotten_flesh>, <item:minecraft:bone>]);
 
 // Vanilla items
 craftingTable.addShaped("saddle", 

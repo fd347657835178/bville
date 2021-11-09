@@ -99,7 +99,7 @@
 	#Range: -1 ~ 1440
 	cooldown_teleport_bind = -1
 	#Fishing treasures can only be found in open water [false/true|default:true]
-	fishing_treasure_in_open_water = true
+	fishing_treasure_in_open_water = false
 
 #Allows to define the conditions for a village siege to begin
 [village_siege]
