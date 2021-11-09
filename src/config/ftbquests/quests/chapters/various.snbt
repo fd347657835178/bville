@@ -1,392 +1,381 @@
 {
-	id: "0000000000000019",
-	group: "",
-	order_index: 1,
-	filename: "various",
-	title: "Various",
-	icon: "usefulbackpacks:backpack_small",
-	default_quest_shape: "",
+	id: "0000000000000019"
+	group: ""
+	order_index: 1
+	filename: "various"
+	title: "Various"
+	icon: "usefulbackpacks:backpack_small"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 2.5d,
-			y: -4.0d,
-			description: ["A backpack can hold extra items, and can be upgraded for extra storage. If you equip one in the Curios back slot, you can open your backpack with Z."],
-			dependencies: ["000000000000002D"],
-			id: "000000000000001D",
+			x: 2.5d
+			y: -4.0d
+			description: ["A backpack can hold extra items, and can be upgraded for extra storage. If you equip one in the Curios back slot, you can open your backpack with Z."]
+			dependencies: ["000000000000002D"]
+			id: "000000000000001D"
 			tasks: [{
-				id: "000000000000001E",
-				type: "item",
+				id: "000000000000001E"
+				type: "item"
 				item: "usefulbackpacks:backpack_small"
 			}]
-		},
+		}
 		{
-			x: 2.5d,
-			y: -6.0d,
-			description: ["The Dank can hold large amounts of a few kinds of block. Upgrades improve not only number of item types but also max items per type. Use this to collect the cobblestone and dirt and such. Can also be set to construction mode with P to place blocks."],
-			dependencies: ["000000000000001D"],
-			id: "000000000000001F",
+			x: 2.5d
+			y: -6.0d
+			description: ["The Dank can hold large amounts of a few kinds of block. Upgrades improve not only number of item types but also max items per type. Use this to collect the cobblestone and dirt and such. Can also be set to construction mode with P to place blocks."]
+			dependencies: ["000000000000001D"]
+			id: "000000000000001F"
 			tasks: [{
-				id: "0000000000000020",
-				type: "item",
+				id: "0000000000000020"
+				type: "item"
 				item: "dankstorage:dank_1"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: -2.0d,
-			description: ["This block can use attached kitchen blocks or other adjacent storage to make food- useful with the large amount of ingredients and recipes. Kitchen appliances like a refridgerator and toaster and oven are also obtainable."],
-			dependencies: ["000000000000002D"],
-			id: "0000000000000021",
+			x: 4.5d
+			y: -2.0d
+			description: ["This block can use attached kitchen blocks or other adjacent storage to make food- useful with the large amount of ingredients and recipes. Kitchen appliances like a refridgerator and toaster and oven are also obtainable."]
+			dependencies: ["000000000000002D"]
+			id: "0000000000000021"
 			tasks: [{
-				id: "0000000000000022",
-				type: "item",
+				id: "0000000000000022"
+				type: "item"
 				item: "cookingforblockheads:cooking_table"
-			}],
+			}]
 			rewards: [{
-				id: "40E86B69249D20D6",
-				type: "item",
-				item: "cookingforblockheads:fridge",
+				id: "40E86B69249D20D6"
+				type: "item"
+				item: "cookingforblockheads:fridge"
 				count: 2
 			}]
-		},
+		}
 		{
-			x: 0.5d,
-			y: -2.0d,
-			description: ["Holds more than a normal barrel. Can be upgraded to hold even more items."],
-			dependencies: ["000000000000002D"],
-			id: "0000000000000023",
+			x: 0.5d
+			y: -2.0d
+			description: ["Holds more than a normal barrel. Can be upgraded to hold even more items."]
+			dependencies: ["000000000000002D"]
+			id: "0000000000000023"
 			tasks: [{
-				id: "0000000000000024",
-				type: "item",
+				id: "0000000000000024"
+				type: "item"
 				item: "metalbarrels:iron_barrel"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -3.5d,
-			description: ["This thing keeps a 3x3 area of chunks loaded even if nobody is around. Your loaders will turn off if you don't log in for a while- right click them to restart them spinning if this happens."],
-			dependencies: ["000000000000002D"],
-			id: "0000000000000025",
-			tasks: [{
-				id: "0000000000000026",
-				type: "item",
-				item: "weirdinggadget:weirding_gadget"
-			}]
-		},
-		{
-			x: -1.5d,
-			y: 0.0d,
+			x: -1.5d
+			y: 0.0d
 			description: [
-				"These drawers can each hold large amounts of single items. Right click to insert from hand, double right click to insert all matching items, left click to remove one, shift left click to remove a stack. Upgrades can increase drawer inventory.",
+				"These drawers can each hold large amounts of single items. Right click to insert from hand, double right click to insert all matching items, left click to remove one, shift left click to remove a stack. Upgrades can increase drawer inventory."
 				"Drawer Controllers can link all attached drawers. Double right click the controller to insert everything from your inventory to matching drawers. The Cooking Table and some other machines can pull items from a drawer controller or drawer slave."
-			],
-			dependencies: ["0000000000000023"],
-			id: "0000000000000027",
+			]
+			dependencies: ["0000000000000023"]
+			id: "0000000000000027"
 			tasks: [{
-				id: "0000000000000028",
-				type: "item",
-				title: "Storage Drawers",
+				id: "0000000000000028"
+				type: "item"
+				title: "Storage Drawers"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "storagedrawers:drawers"
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: 2.0d,
-			description: ["These chests hold the same inventory as any other chest with the same color code. Right click the latch with a diamond to use your own personal chest network instead of the public one. There is a backpack that can be linked to the chests as well."],
-			dependencies: ["0000000000000027"],
-			id: "0000000000000029",
+			x: -1.5d
+			y: 2.0d
+			description: ["These chests hold the same inventory as any other chest with the same color code. Right click the latch with a diamond to use your own personal chest network instead of the public one. There is a backpack that can be linked to the chests as well."]
+			dependencies: ["0000000000000027"]
+			id: "0000000000000029"
 			tasks: [{
-				id: "000000000000002A",
-				type: "item",
+				id: "000000000000002A"
+				type: "item"
 				item: "enderstorage:ender_chest"
 			}]
-		},
+		}
 		{
-			x: 6.5d,
-			y: -4.0d,
-			description: ["This device can be set to find a specific biome, in any dimension."],
-			dependencies: ["000000000000004A"],
-			id: "000000000000002B",
+			x: 6.5d
+			y: -4.0d
+			description: ["This device can be set to find a specific biome, in any dimension."]
+			dependencies: ["000000000000004A"]
+			id: "000000000000002B"
 			tasks: [{
-				id: "000000000000002C",
-				type: "item",
+				id: "000000000000002C"
+				type: "item"
 				item: {
-					id: "naturescompass:naturescompass",
-					Count: 1b,
-					tag: {}
+					id: "naturescompass:naturescompass"
+					Count: 1b
+					tag: { }
 				}
 			}]
-		},
+		}
 		{
-			x: 2.5d,
-			y: -2.0d,
+			x: 2.5d
+			y: -2.0d
 			description: [
-				"This is like a crafting table, except it can pull from any adjacent inventory. Try using metal barrels for your crafting storage. Items placed in the grid will stay there, use the red square to clear it.",
-				'Very useful when paired with the "+" crafting in JEI (the U/R recipe menu).'
-			],
-			id: "000000000000002D",
+				"This is like a crafting table, except it can pull from any adjacent inventory. Try using metal barrels for your crafting storage. Items placed in the grid will stay there, use the red square to clear it."
+				"Very useful when paired with the \"+\" crafting in JEI (the U/R recipe menu)."
+			]
+			id: "000000000000002D"
 			tasks: [{
-				id: "000000000000002E",
-				type: "item",
+				id: "000000000000002E"
+				type: "item"
 				item: "craftingstation:crafting_station"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: 2.0d,
-			description: ["It's a lever that looks like a torch. There's also bricks that hide a secret button."],
-			dependencies: ["0000000000000046"],
-			id: "0000000000000044",
+			x: 4.5d
+			y: 2.0d
+			description: ["It's a lever that looks like a torch. There's also bricks that hide a secret button."]
+			dependencies: ["0000000000000046"]
+			id: "0000000000000044"
 			tasks: [{
-				id: "0000000000000045",
-				type: "item",
+				id: "0000000000000045"
+				type: "item"
 				item: "inspirations:torch_lever"
 			}]
-		},
+		}
 		{
-			x: 2.5d,
-			y: 2.0d,
-			description: ["You can put carpets on a trapdoor to hide it better. Carpets can also be placed over pressure plates and stairs."],
-			dependencies: ["00000000000000AD"],
-			id: "0000000000000046",
+			x: 2.5d
+			y: 2.0d
+			description: ["You can put carpets on a trapdoor to hide it better. Carpets can also be placed over pressure plates and stairs."]
+			dependencies: ["00000000000000AD"]
+			id: "0000000000000046"
 			tasks: [{
-				id: "0000000000000047",
-				type: "item",
+				id: "0000000000000047"
+				type: "item"
 				item: "inspirations:white_carpeted_trapdoor"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -2.0d,
-			description: ["Cheaper and prettier than a hopper chain, but otherwise works the same. Needs a hopper at the front to send items in."],
-			dependencies: ["0000000000000023"],
-			id: "0000000000000048",
+			x: -1.5d
+			y: -2.0d
+			description: ["Cheaper and prettier than a hopper chain, but otherwise works the same. Needs a hopper at the front to send items in."]
+			dependencies: ["0000000000000023"]
+			id: "0000000000000048"
 			tasks: [{
-				id: "0000000000000049",
-				type: "item",
+				id: "0000000000000049"
+				type: "item"
 				item: "inspirations:pipe"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: -4.0d,
-			description: ["Clay armor has the same stats as leather, but is nicer to cows."],
-			dependencies: ["000000000000002D"],
-			id: "000000000000004A",
+			x: 4.5d
+			y: -4.0d
+			description: ["Clay armor has the same stats as leather, but is nicer to cows."]
+			dependencies: ["000000000000002D"]
+			id: "000000000000004A"
 			tasks: [{
-				id: "000000000000004B",
-				type: "item",
+				id: "000000000000004B"
+				type: "item"
 				item: {
-					id: "ceramics:clay_chestplate",
-					Count: 1b,
+					id: "ceramics:clay_chestplate"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.5d,
-			y: 0.0d,
-			description: ["The postbox can be used to send items to any player's mailbox, if they have placed one."],
-			dependencies: ["0000000000000023"],
-			id: "000000000000004C",
+			x: 0.5d
+			y: 0.0d
+			description: ["The postbox can be used to send items to any player's mailbox, if they have placed one."]
+			dependencies: ["0000000000000023"]
+			id: "000000000000004C"
 			tasks: [{
-				id: "000000000000004D",
-				type: "item",
+				id: "000000000000004D"
+				type: "item"
 				item: "cfm:post_box"
-			}],
+			}]
 			rewards: [{
-				id: "11B2DE2A7E323D29",
-				type: "item",
+				id: "11B2DE2A7E323D29"
+				type: "item"
 				item: "cfm:warped_mail_box"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -3.5d,
-			description: ["Waystones can be used for teleportation once you activate one by right clicking. Use a warp scroll or stone to teleport to a visited waystone, or right click a waystone to travel to any other one you've already been to."],
-			dependencies: ["000000000000002D"],
-			id: "00000000000000A9",
+			x: -1.5d
+			y: -4.0d
+			description: ["Waystones can be used for teleportation once you activate one by right clicking. Use a warp scroll or stone to teleport to a visited waystone, or right click a waystone to travel to any other one you've already been to."]
+			dependencies: ["000000000000002D"]
+			id: "00000000000000A9"
 			tasks: [{
-				id: "00000000000000AA",
-				type: "item",
+				id: "00000000000000AA"
+				type: "item"
 				item: "waystones:waystone"
 			}]
-		},
+		}
 		{
-			x: 2.5d,
-			y: 0.0d,
+			x: 2.5d
+			y: 0.0d
 			description: [
-				"These wands can place many blocks quickly. Right click a block to place more blocks of the same type (or whatever's in your offhand) onto that side as well as any adjacent blocks of that type. Blocks in the inventory (or danks) will be used.",
+				"These wands can place many blocks quickly. Right click a block to place more blocks of the same type (or whatever's in your offhand) onto that side as well as any adjacent blocks of that type. Blocks in the inventory (or danks) will be used."
 				"Shift-right click empty space to open the options screen, or shift and scroll to change placement modes. Higher tiers of wand (iron, diamond, nether star) can place more blocks and have more durability- the nether star wand is unbreakable."
-			],
-			dependencies: ["000000000000002D"],
-			id: "00000000000000AD",
+			]
+			dependencies: ["000000000000002D"]
+			id: "00000000000000AD"
 			tasks: [{
-				id: "00000000000000AE",
-				type: "item",
+				id: "00000000000000AE"
+				type: "item"
 				item: {
-					id: "constructionwand:stone_wand",
-					Count: 1b,
+					id: "constructionwand:stone_wand"
+					Count: 1b
 					tag: {
-						wand_options: {},
+						wand_options: { }
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 6.5d,
-			y: 2.0d,
-			description: ["Grape seeds will result in a plant that has a bush on top of a stem. Place fences on the sides of the bush- the bush will spread to the fences and grapes will grow below. Each grape plant can support four fences."],
-			dependencies: ["00000000000000B5"],
-			id: "00000000000000B3",
+			x: 6.5d
+			y: 2.0d
+			description: ["Grape seeds will result in a plant that has a bush on top of a stem. Place fences on the sides of the bush- the bush will spread to the fences and grapes will grow below. Each grape plant can support four fences."]
+			dependencies: ["00000000000000B5"]
+			id: "00000000000000B3"
 			tasks: [{
-				id: "00000000000000B4",
-				type: "item",
+				id: "00000000000000B4"
+				type: "item"
 				item: "simplefarming:grapes"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: 0.0d,
-			description: ["To get cheese slices, craft a Wheel of Cheese and place it in the world, then right click it."],
-			dependencies: ["0000000000000021"],
-			id: "00000000000000B5",
+			x: 4.5d
+			y: 0.0d
+			description: ["To get cheese slices, craft a Wheel of Cheese and place it in the world, then right click it."]
+			dependencies: ["0000000000000021"]
+			id: "00000000000000B5"
 			tasks: [{
-				id: "00000000000000B6",
-				type: "item",
+				id: "00000000000000B6"
+				type: "item"
 				item: "simplefarming:cheese_slice"
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: -6.0d,
-			description: ["This can be used to place colored text on a rope. Other items from the mod include lights and flags on string."],
-			dependencies: ["000000000000002D"],
-			id: "00000000000000B7",
+			x: 0.5d
+			y: -6.0d
+			description: ["This can be used to place colored text on a rope. Other items from the mod include lights and flags on string."]
+			dependencies: ["000000000000002D"]
+			id: "00000000000000B7"
 			tasks: [{
-				id: "00000000000000B8",
-				type: "item",
+				id: "00000000000000B8"
+				type: "item"
 				item: {
-					id: "fairylights:letter_bunting",
-					Count: 1b,
+					id: "fairylights:letter_bunting"
+					Count: 1b
 					tag: {
 						text: {
-							styling: [I;],
+							styling: [I; ]
 							value: ""
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.5d,
-			y: 2.0d,
-			description: ["Displays books and other items. Right click to add or remove items. Comes in Rainbow, Tomes, or Ancient variants as well that each display the books differently."],
-			dependencies: ["0000000000000027"],
-			id: "00000000000000BB",
+			x: 0.5d
+			y: 2.0d
+			description: ["Displays books and other items. Right click to add or remove items. Comes in Rainbow, Tomes, or Ancient variants as well that each display the books differently."]
+			dependencies: ["0000000000000027"]
+			id: "00000000000000BB"
 			tasks: [{
-				id: "00000000000000BC",
-				type: "item",
-				title: "Shelves",
+				id: "00000000000000BC"
+				type: "item"
+				title: "Shelves"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "inspirations:bookshelves"
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: -4.5d,
-			description: ["Sharestones can be used for teleportation without requiring you to visit the places beforehand. Each stone can only teleport to ones of the same color, but otherwise there is no limit."],
-			dependencies: ["000000000000002D"],
-			id: "1A56DA3BFDABBAA8",
+			x: 0.5d
+			y: -4.0d
+			description: ["Sharestones can be used for teleportation without requiring you to visit the places beforehand. Each stone can only teleport to ones of the same color, but otherwise there is no limit."]
+			dependencies: ["000000000000002D"]
+			id: "1A56DA3BFDABBAA8"
 			tasks: [{
-				id: "095C5B9F4AD59A82",
-				type: "item",
+				id: "095C5B9F4AD59A82"
+				type: "item"
 				item: "waystones:sharestone"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -6.0d,
-			description: ["Paired warp plates enable teleportation between them just by standing on one. Place a plate and right click it to get its Attuned Shard. Swap shards between two plates to enable teleportation between them."],
+			x: -1.5d
+			y: -6.0d
+			description: ["Paired warp plates enable teleportation between them just by standing on one. Place a plate and right click it to get its Attuned Shard. Swap shards between two plates to enable teleportation between them."]
 			dependencies: [
-				"1A56DA3BFDABBAA8",
+				"1A56DA3BFDABBAA8"
 				"00000000000000A9"
-			],
-			dependency_requirement: "one_completed",
-			id: "257ACE1FA73E8F5E",
+			]
+			dependency_requirement: "one_completed"
+			id: "257ACE1FA73E8F5E"
 			tasks: [{
-				id: "5D46A666889892C9",
-				type: "item",
+				id: "5D46A666889892C9"
+				type: "item"
 				item: "waystones:warp_plate"
 			}]
-		},
+		}
 		{
-			x: 6.5d,
-			y: -6.0d,
+			x: 6.5d
+			y: -6.0d
 			description: [
-				"These can carry fluids out of cisterns and into other blocks- right click the side of the channel to change between connection types.",
+				"These can carry fluids out of cisterns and into other blocks- right click the side of the channel to change between connection types."
 				"You have to use these to add fluid to certain blocks, like Honey Tanks and Beecons."
-			],
-			dependencies: ["4D3A634A5977BA54"],
-			id: "36BDEC37CAFC8091",
+			]
+			dependencies: ["4D3A634A5977BA54"]
+			id: "36BDEC37CAFC8091"
 			tasks: [{
-				id: "2E3C98B573CC1C93",
-				type: "item",
+				id: "2E3C98B573CC1C93"
+				type: "item"
 				item: "ceramics:terracotta_channel"
-			}],
+			}]
 			rewards: [{
-				id: "09CEFAA3B9302A1F",
-				type: "item",
+				id: "09CEFAA3B9302A1F"
+				type: "item"
 				item: "ceramics:terracotta_faucet"
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: -6.0d,
-			description: ["These can hold liquids, and are a lot cheaper than the other methods. Use porcelain if you want to carry hot liquids like lava."],
-			dependencies: ["000000000000004A"],
-			id: "4D3A634A5977BA54",
+			x: 4.5d
+			y: -6.0d
+			description: ["These can hold liquids, and are a lot cheaper than the other methods. Use porcelain if you want to carry hot liquids like lava."]
+			dependencies: ["000000000000004A"]
+			id: "4D3A634A5977BA54"
 			tasks: [{
-				id: "543CECB38B12480D",
-				type: "item",
+				id: "543CECB38B12480D"
+				type: "item"
 				item: "ceramics:terracotta_cistern"
 			}]
-		},
+		}
 		{
-			x: 6.5d,
-			y: -2.0d,
-			description: ["An endless source of milk that refills over time. Created by compressing a cow into an appropriate container using an anvil."],
-			dependencies: ["0000000000000021"],
-			id: "2C480EDEED9CA195",
+			x: 6.5d
+			y: -2.0d
+			description: ["An endless source of milk that refills over time. Created by compressing a cow into an appropriate container using an anvil."]
+			dependencies: ["0000000000000021"]
+			id: "2C480EDEED9CA195"
 			tasks: [{
-				id: "305405DA7EEE9943",
-				type: "item",
+				id: "305405DA7EEE9943"
+				type: "item"
 				item: "cookingforblockheads:cow_jar"
 			}]
-		},
+		}
 		{
-			x: 6.5d,
-			y: 0.0d,
-			description: ["Enables your oven to cook using electricity instead of fuel items. Electricity is hard to get though... you'd need a Honey Generator or Mana Fluxfield."],
-			dependencies: ["0000000000000021"],
-			id: "74AC8C5ED8DEB0F3",
+			x: 6.5d
+			y: 0.0d
+			description: ["Enables your oven to cook using electricity instead of fuel items. Electricity is hard to get though... you'd need a Mana Fluxfield."]
+			dependencies: ["0000000000000021"]
+			id: "74AC8C5ED8DEB0F3"
 			tasks: [{
-				id: "60690525CB3B6D84",
-				type: "item",
+				id: "60690525CB3B6D84"
+				type: "item"
 				item: "cookingforblockheads:heating_unit"
 			}]
 		}

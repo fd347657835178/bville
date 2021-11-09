@@ -12,12 +12,17 @@ craftingTable.addShaped("build_tool_compatibility",
 [<item:minecraft:air>, <item:minecraft:stick>, <item:minecraft:air>], 
 [<item:minecraft:stick>, <item:minecraft:air>, <item:minecraft:air>]], null);
 
-// empty mob spawner
+// Workaround for uncraftable
 craftingTable.addShaped("empty_spawner", 
 <item:minecraft:spawner>, 
 [[<item:minecraft:obsidian>, <item:minecraft:iron_bars>, <item:minecraft:obsidian>], 
 [<item:minecraft:iron_bars>, <item:tombstone:grave_dust>, <item:minecraft:iron_bars>], 
 [<item:minecraft:obsidian>, <item:minecraft:iron_bars>, <item:minecraft:obsidian>]], null);
+
+// Workaround for rarity
+craftingTable.addShapeless("essence_of_undeath", 
+<item:tombstone:essence_of_undeath> * 2, 
+[<item:botania:vial>, <item:tombstone:impregnated_diamond>, <item:tombstone:tablet_of_cupidity>, <item:minecraft:rotten_flesh>, <item:minecraft:bone>]);
 
 // Vanilla items
 craftingTable.addShaped("saddle", 
@@ -84,3 +89,35 @@ craftingTable.addShaped("sandland_world_control",
 [[<item:minecraft:air>, <item:minecraft:sand>, <item:minecraft:air>], 
 [<item:minecraft:terracotta>, <item:minecraft:air>, <item:minecraft:terracotta>], 
 [<item:minecraft:air>, <item:minecraft:stone>, <item:minecraft:air>]], null);
+
+// Resource Generation
+//netherrack
+<recipetype:create:filling>.addRecipe("gen_netherrack", <item:minecraft:netherrack>, <tag:items:forge:cobblestone>, <fluid:minecraft:lava> * 250);
+
+//dirt
+<recipetype:create:filling>.addRecipe("gen_dirt", <item:minecraft:dirt>, <tag:items:forge:sand>, <fluid:minecraft:water> * 250);
+
+//soul soil
+<recipetype:create:mixing>.addRecipe("gen_soul_soil", "heated", <item:minecraft:soul_soil>, [<item:minecraft:dirt>, <item:create:cinder_flour>], []);
+
+//soul sand
+<recipetype:create:milling>.addRecipe("gen_soul_sand", [<item:minecraft:soul_sand>], <item:minecraft:soul_soil>);
+
+//zinc
+<recipetype:create:compacting>.addRecipe("gen_zinc", "none", <item:create:zinc_ingot>, [<item:minecraft:iron_ingot>, <item:minecraft:glowstone_dust>], [<fluid:minecraft:lava> * 1000]);
+
+//copper
+<recipetype:create:compacting>.addRecipe("gen_copper", "none", <item:create:copper_ingot>, [<item:minecraft:gold_ingot>, <item:minecraft:redstone>], [<fluid:minecraft:lava> * 1000]);
+
+//redstone
+<recipetype:create:mixing>.addRecipe("gen_redstone", "none", <item:minecraft:redstone>, [<item:minecraft:quartz>, <item:minecraft:brick>], []);
+
+//glowstone
+<recipetype:create:mixing>.addRecipe("gen_glowstone", "none", <item:minecraft:glowstone_dust>, [<item:minecraft:quartz>, <item:minecraft:torch>], []);
+
+//diamond
+<recipetype:create:compacting>.addRecipe("gen_diamond", "superheated", <item:minecraft:diamond>, [<item:minecraft:lapis_lazuli>, <item:minecraft:coal_block>], []);
+<recipetype:create:compacting>.addRecipe("gen_diamond2", "superheated", <item:minecraft:diamond>, [<item:minecraft:lapis_lazuli>, <item:quark:charcoal_block>], []);
+
+//lapis
+<recipetype:create:mixing>.addRecipe("gen_lapis", "heated", <item:minecraft:lapis_lazuli>, [<item:minecraft:quartz>, <tag:items:forge:dyes/blue>], [<fluid:minecraft:water> * 1000]);

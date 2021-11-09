@@ -46,14 +46,8 @@ Find biomes without hassle.
 **[Construction Wand](https://www.curseforge.com/minecraft/mc-mods/construction-wand)**
 Build quickly in the early and late game.
 
-**[Resourceful Bees](https://www.curseforge.com/minecraft/mc-mods/resourceful-bees)**
-Adds a method for passive resource generation that is a little more interesting than resource generating crops or machines.
-
-**[The Bumblezone (Forge)](https://www.curseforge.com/minecraft/mc-mods/the-bumblezone-forge)**
-Adds a new dimension to find bees and bee accessories, including resources from Resourceful Bees.
-
 ## customization enablers
-**[FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests)**
+**[FTB Quests (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge)**
 We can use a quest mod to add a guidebook that tracks progress.
 
 **[Global Data- & Resourcepacks](https://www.curseforge.com/minecraft/mc-mods/drp-global-datapack)**
@@ -64,6 +58,9 @@ Simple teleporters to custom dimensions, can add recipes to create the teleporte
 
 **[CraftTweaker](https://www.curseforge.com/minecraft/mc-mods/crafttweaker)**
 Needed to remove recipes or add recipes with NBT.
+
+**[CreateTweaker](https://www.curseforge.com/minecraft/mc-mods/createtweaker)**
+Create compatibility.
 
 **[Default Options](https://www.curseforge.com/minecraft/mc-mods/default-options)**
 To set default key configurations, so that every feature works out of the box.
@@ -84,7 +81,7 @@ Simple backpack mod.
 
 **[Dank Storage](https://www.curseforge.com/minecraft/mc-mods/dank-storage)**
 For mass trash block handling.
-autocomplete cooking
+
 **[Ender Storage](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8)**
 Long-distance item transport without chunkloading the middle.
 
@@ -99,13 +96,13 @@ Lets people change up their look without sacrificing stats.
 **[Client Tweaks](https://www.curseforge.com/minecraft/mc-mods/client-tweaks)**
 Some torch helpers and auto ladder climb.
 
-**[The Weirding Gadget](https://www.curseforge.com/minecraft/mc-mods/the-weirding-gadget)**
-Chunkloader with ability to disable if player hasn't logged in in a week.
-
 **[FallingTree](https://www.curseforge.com/minecraft/mc-mods/falling-tree)**
 Chop trees.
 
-**[FTB Ultimine](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine)**
+**[FTB Chunks (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-chunks-forge)**
+Territory claiming, explosion prevention, chunk loading.
+
+**[FTB Ultimine (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge)**
 Veinmine and tunnel helper, good synergy with Botania tools.
 
 **[AppleSkin](https://www.curseforge.com/minecraft/mc-mods/appleskin)**
@@ -132,6 +129,12 @@ Makes moving huge inventories like diamond barrels much easier, along with movin
 **[Enhanced Mob Spawners](https://www.curseforge.com/minecraft/mc-mods/enhanced-mob-spawners)**
 Easier mob spawners allow players to reduce the complexity (and thus server-intensiveness) of farming setups.
 
+**[SwingThroughGrass](https://www.curseforge.com/minecraft/mc-mods/swingthroughgrass)**
+Should be in vanilla.
+
+**[Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)**
+It's nice to have spawn prevention without torch spam, especially around minecolonies.
+
 ## purely technical
 
 **[Toast Control](https://www.curseforge.com/minecraft/mc-mods/toast-control)**
@@ -144,7 +147,7 @@ Removes warning message on creating or loading worlds that use custom worldgen.
 Equipment API, needed for Botania.
 
 **[Mantle](https://www.curseforge.com/minecraft/mc-mods/mantle)**
-Rewuired for Ceramics. Also adds colored hearts instead of multiple heart rows for HP above maximum.
+Required for Ceramics. Also adds colored hearts instead of multiple heart rows for HP above maximum.
 
 ## dependencies
 
@@ -157,8 +160,11 @@ Needed for Useful Backpacks.
 **[AutoRegLib](https://www.curseforge.com/minecraft/mc-mods/autoreglib)**
 Needed for Quark.
 
-**[FTB GUI Library](https://www.curseforge.com/minecraft/mc-mods/ftb-gui-library)**
-Needed for JEI gui.
+**[FTB Library (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge)**
+Needed for FTB mods.
+
+**[FTB Teams (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-teams-forge)**
+Needed for FTB mods.
 
 **[Placebo](https://www.curseforge.com/minecraft/mc-mods/placebo)**
 Needed for Toast Control.

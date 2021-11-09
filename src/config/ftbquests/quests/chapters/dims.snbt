@@ -1,144 +1,145 @@
 {
-	id: "0000000000000002",
-	group: "",
-	order_index: 2,
-	filename: "dims",
-	title: "Dimensions",
-	icon: "versatileportals:portal_controller",
-	subtitle: ["How to get to the five custom dimensions."],
-	default_quest_shape: "",
+	id: "0000000000000002"
+	group: ""
+	order_index: 2
+	filename: "dims"
+	title: "Dimensions"
+	icon: "versatileportals:portal_controller"
+	subtitle: ["How to get to the five custom dimensions."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Spider Caves",
-			x: 9.0d,
-			y: 4.0d,
-			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of caves, full of spiders but great for mining."],
-			dependencies: ["000000000000000F"],
-			id: "0000000000000005",
+			title: "Spider Caves"
+			x: 9.0d
+			y: 4.0d
+			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of caves, full of spiders but great for mining."]
+			dependencies: ["000000000000000F"]
+			id: "0000000000000005"
 			tasks: [{
-				id: "0000000000000006",
-				type: "item",
+				id: "0000000000000006"
+				type: "item"
 				item: {
-					id: "versatileportals:existing_world_control",
-					Count: 1b,
+					id: "versatileportals:existing_world_control"
+					Count: 1b
 					tag: {
-						WorldID: "bv:spidercave",
-						Color: 15227415,
+						WorldID: "bv:spidercave"
+						Color: 15227415
 						display: {
-							Name: '{"text":"spidercave"}'
+							Name: "{\"text\":\"spidercave\"}"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Flat Village",
-			x: 11.0d,
-			y: 4.0d,
-			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of endless villages on a thin flat land."],
-			dependencies: ["000000000000000F"],
-			id: "0000000000000007",
+			title: "Flat Village"
+			x: 11.0d
+			y: 4.0d
+			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of endless villages on a thin flat land."]
+			dependencies: ["000000000000000F"]
+			id: "0000000000000007"
 			tasks: [{
-				id: "0000000000000008",
-				type: "item",
+				id: "0000000000000008"
+				type: "item"
 				item: {
-					id: "versatileportals:existing_world_control",
-					Count: 1b,
+					id: "versatileportals:existing_world_control"
+					Count: 1b
 					tag: {
-						WorldID: "bv:flatvillage",
-						Color: 5185982,
+						WorldID: "bv:flatvillage"
+						Color: 5185982
 						display: {
-							Name: '{"text":"flatvillage"}'
+							Name: "{\"text\":\"flatvillage\"}"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Sand Land",
-			x: 13.0d,
-			y: 4.0d,
-			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of sand and terracotta, with extra lava."],
-			dependencies: ["000000000000000F"],
-			id: "0000000000000009",
+			title: "Sand Land"
+			x: 13.0d
+			y: 4.0d
+			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of sand and terracotta, with extra lava."]
+			dependencies: ["000000000000000F"]
+			id: "0000000000000009"
 			tasks: [{
-				id: "000000000000000A",
-				type: "item",
+				id: "000000000000000A"
+				type: "item"
 				item: {
-					id: "versatileportals:existing_world_control",
-					Count: 1b,
+					id: "versatileportals:existing_world_control"
+					Count: 1b
 					tag: {
-						WorldID: "bv:sandland",
-						Color: 16006202,
+						WorldID: "bv:sandland"
+						Color: 16006202
 						display: {
-							Name: '{"text":"sandland"}'
+							Name: "{\"text\":\"sandland\"}"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Astral Jungle",
-			x: 15.0d,
-			y: 4.0d,
-			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of floating jungle islands, watch your step."],
-			dependencies: ["000000000000000F"],
-			id: "000000000000000B",
+			title: "Astral Jungle"
+			x: 15.0d
+			y: 4.0d
+			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of floating jungle islands, watch your step."]
+			dependencies: ["000000000000000F"]
+			id: "000000000000000B"
 			tasks: [{
-				id: "000000000000000C",
-				type: "item",
+				id: "000000000000000C"
+				type: "item"
 				item: {
-					id: "versatileportals:existing_world_control",
-					Count: 1b,
+					id: "versatileportals:existing_world_control"
+					Count: 1b
 					tag: {
-						WorldID: "bv:astraljungle",
-						Color: 9747697,
+						WorldID: "bv:astraljungle"
+						Color: 9747697
 						display: {
-							Name: '{"text":"astraljungle"}'
+							Name: "{\"text\":\"astraljungle\"}"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Snow Zone",
-			x: 17.0d,
-			y: 4.0d,
-			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of snow and ice, with incredible mountains and valleys that can't be found anywhere else. Good for gemstone mining."],
-			dependencies: ["000000000000000F"],
-			id: "000000000000000D",
+			title: "Snow Zone"
+			x: 17.0d
+			y: 4.0d
+			description: ["You need a world control in the Portal Controller to go anywhere. This one will take you to a world of snow and ice, with incredible mountains and valleys that can't be found anywhere else. Good for gemstone mining."]
+			dependencies: ["000000000000000F"]
+			id: "000000000000000D"
 			tasks: [{
-				id: "000000000000000E",
-				type: "item",
+				id: "000000000000000E"
+				type: "item"
 				item: {
-					id: "versatileportals:existing_world_control",
-					Count: 1b,
+					id: "versatileportals:existing_world_control"
+					Count: 1b
 					tag: {
-						WorldID: "bv:snowzone",
-						Color: 8485114,
+						WorldID: "bv:snowzone"
+						Color: 8485114
 						display: {
-							Name: '{"text":"snowzone"}'
+							Name: "{\"text\":\"snowzone\"}"
 						}
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 13.0d,
-			y: 2.0d,
-			description: ["Make a frame out of Portal Frames and one Portal Controller, then light the bottom of the portal with the Portal Lighter."],
-			id: "000000000000000F",
+			x: 13.0d
+			y: 2.0d
+			description: ["Make a frame out of Portal Frames and one Portal Controller, then light the bottom of the portal with the Portal Lighter."]
+			id: "000000000000000F"
 			tasks: [{
-				id: "0000000000000010",
-				type: "item",
+				id: "0000000000000010"
+				type: "item"
 				item: "versatileportals:portal_controller"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000011",
-				type: "item",
+				id: "0000000000000011"
+				type: "item"
 				item: {
-					id: "versatileportals:portal_lighter",
-					Count: 1b,
+					id: "versatileportals:portal_lighter"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}

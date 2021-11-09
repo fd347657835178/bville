@@ -1,203 +1,204 @@
 {
-	id: "0000000000000012",
-	group: "",
-	order_index: 0,
-	filename: "interface",
-	title: "Interface",
-	icon: "cfm:white_kitchen_sink",
-	subtitle: ["Some tips on new controls and abilities. Nothing to collect here, just info in the descriptions."],
-	default_quest_shape: "",
+	id: "0000000000000012"
+	group: ""
+	order_index: 0
+	filename: "interface"
+	title: "Interface"
+	icon: "cfm:white_kitchen_sink"
+	subtitle: ["Some tips on new controls and abilities. Nothing to collect here, just info in the descriptions."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.0d,
-			y: -3.5d,
-			description: ["You can use the ~ key to activate the mining assist. Use shift + scroll to change mining modes."],
-			id: "0000000000000013",
+			x: -2.0d
+			y: -3.5d
+			description: ["You can use the ~ key to activate the mining assist. Use shift + scroll to change mining modes."]
+			id: "0000000000000013"
 			tasks: [{
-				id: "0000000000000014",
-				type: "checkmark",
-				title: "Mining",
+				id: "0000000000000014"
+				type: "checkmark"
+				title: "Mining"
 				icon: {
-					id: "minecraft:diamond_pickaxe",
-					Count: 1b,
+					id: "minecraft:diamond_pickaxe"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -3.5d,
-			description: ["Use an axe to cut any block of a tree and the whole tree will be mined. Crouch to deactivate this."],
-			id: "0000000000000015",
+			x: 0.0d
+			y: -3.5d
+			description: ["Use an axe to cut any block of a tree and the whole tree will be mined. Crouch to deactivate this."]
+			id: "0000000000000015"
 			tasks: [{
-				id: "0000000000000016",
-				type: "checkmark",
-				title: "Tree Chopping",
+				id: "0000000000000016"
+				type: "checkmark"
+				title: "Tree Chopping"
 				icon: {
-					id: "minecraft:diamond_axe",
-					Count: 1b,
+					id: "minecraft:diamond_axe"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -1.5d,
-			description: ["Use F7 to toggle the lighting overlay, where monsters will spawn in yellow squares at night, and red squares always. Use F9 to toggle the chunk border overlay."],
-			id: "0000000000000017",
+			x: -2.0d
+			y: -1.5d
+			description: ["Use F7 to toggle the lighting overlay, where monsters will spawn in yellow squares at night, and red squares always. Use F9 to toggle the chunk border overlay."]
+			id: "0000000000000017"
 			tasks: [{
-				id: "0000000000000018",
-				type: "checkmark",
-				title: "Overlays",
+				id: "0000000000000018"
+				type: "checkmark"
+				title: "Overlays"
 				icon: "minecraft:torch"
 			}]
-		},
+		}
 		{
-			title: "Curios",
-			icon: "usefulbackpacks:backpack_small",
-			x: -4.0d,
-			y: -1.5d,
-			description: ["Press the G button or use the grey circle in the top left of the character portrait to open the Curios equipment slots. Backpacks and rings and some other items can be equipped here."],
-			id: "0000000000000035",
+			title: "Curios"
+			icon: "usefulbackpacks:backpack_small"
+			x: -4.0d
+			y: -1.5d
+			description: ["Press the G button or use the grey circle in the top left of the character portrait to open the Curios equipment slots. Backpacks and rings and some other items can be equipped here."]
+			id: "0000000000000035"
 			tasks: [{
-				id: "0000000000000037",
-				type: "checkmark",
+				id: "0000000000000037"
+				type: "checkmark"
 				title: "Curios"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: 2.5d,
-			description: ["Use the button in the bottom right of the character portrait in the inventory screen to open the cosmetic armor slots. Use the checkmark to hide armor for that slot entirely."],
-			id: "0000000000000038",
+			x: 2.0d
+			y: 2.5d
+			description: ["Use the button in the bottom right of the character portrait in the inventory screen to open the cosmetic armor slots. Use the checkmark to hide armor for that slot entirely."]
+			id: "0000000000000038"
 			tasks: [{
-				id: "0000000000000039",
-				type: "checkmark",
-				title: "Cosmetic Armor",
+				id: "0000000000000039"
+				type: "checkmark"
+				title: "Cosmetic Armor"
 				icon: "botania:cosmetic_black_tie"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: 2.5d,
-			description: ["Try new foods! Your maximum health will increase as you eat more."],
-			id: "000000000000003A",
+			x: -2.0d
+			y: 2.5d
+			description: ["Try new foods! Your maximum health will increase as you eat more."]
+			id: "000000000000003A"
 			tasks: [{
-				id: "000000000000003B",
-				type: "checkmark",
-				title: "Extra Life",
+				id: "000000000000003B"
+				type: "checkmark"
+				title: "Extra Life"
 				icon: "minecraft:golden_apple"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: 2.5d,
-			description: ["Over time, chickens will shed feathers as well as lay eggs."],
-			id: "000000000000003C",
+			x: 0.0d
+			y: 2.5d
+			description: ["Over time, chickens will shed feathers as well as lay eggs."]
+			id: "000000000000003C"
 			tasks: [{
-				id: "000000000000003D",
-				type: "checkmark",
-				title: "Chickens drop Feathers",
+				id: "000000000000003D"
+				type: "checkmark"
+				title: "Chickens drop Feathers"
 				icon: "minecraft:feather"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: 0.5d,
-			description: ["Right clicking on a fully grown crop will harvest and replant it automatically."],
-			id: "000000000000003E",
+			x: -2.0d
+			y: 0.5d
+			description: ["Right clicking on a fully grown crop will harvest and replant it automatically."]
+			id: "000000000000003E"
 			tasks: [{
-				id: "000000000000003F",
-				type: "checkmark",
-				title: "Rightclick Harvest",
+				id: "000000000000003F"
+				type: "checkmark"
+				title: "Rightclick Harvest"
 				icon: "minecraft:wheat"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: -1.5d,
-			description: ["If you stand on a ladder and look up, you will climb it without needing to press a key."],
-			id: "0000000000000040",
+			x: 2.0d
+			y: -1.5d
+			description: ["If you stand on a ladder and look up, you will climb it without needing to press a key."]
+			id: "0000000000000040"
 			tasks: [{
-				id: "0000000000000041",
-				type: "checkmark",
-				title: "Auto-climb Ladders",
+				id: "0000000000000041"
+				type: "checkmark"
+				title: "Auto-climb Ladders"
 				icon: "quark:spruce_ladder"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: -1.5d,
-			description: ["Press B to create new waypoints and U to see the full list. Waypoints appear to you on the map and can be shared to the chat from the menu."],
-			id: "0000000000000042",
+			x: 0.0d
+			y: -1.5d
+			description: ["Press B to create new waypoints and U to see the full list. Waypoints appear to you on the map and can be shared to the chat from the menu."]
+			id: "0000000000000042"
 			tasks: [{
-				id: "0000000000000043",
-				type: "checkmark",
-				title: "Waypoints",
+				id: "0000000000000043"
+				type: "checkmark"
+				title: "Waypoints"
 				icon: "minecraft:compass"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: 2.5d,
-			description: ["When you die, a grave will be created that stores your items. Right click it with the key you spawn with to open it. The grave will also be highlighted through blocks if you're holding the key. Also, press H to open the magic menu."],
-			id: "00000000000000A6",
+			x: -4.0d
+			y: 2.5d
+			description: ["When you die, a grave will be created that stores your items. Right click it with the key you spawn with to open it. The grave will also be highlighted through blocks if you're holding the key. Also, press H to open the magic menu."]
+			id: "00000000000000A6"
 			tasks: [{
-				id: "00000000000000A7",
-				type: "checkmark",
-				title: "Dying",
+				id: "00000000000000A7"
+				type: "checkmark"
+				title: "Dying"
 				icon: {
-					id: "tombstone:decorative_grave_normal",
-					Count: 1b,
+					id: "tombstone:decorative_grave_normal"
+					Count: 1b
 					tag: {
 						model_texture: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: -3.5d,
-			description: ["There are Insert, Extract, and Sort buttons in most inventories. Holding shift while clicking Insert or Extract will only move item types that already exist in the target."],
-			id: "00000000000000AB",
+			x: 2.0d
+			y: -3.5d
+			description: ["There are Insert, Extract, and Sort buttons in most inventories. Holding shift while clicking Insert or Extract will only move item types that already exist in the target."]
+			id: "00000000000000AB"
 			tasks: [{
-				id: "00000000000000AC",
-				type: "checkmark",
-				title: "Inventory Buttons",
+				id: "00000000000000AC"
+				type: "checkmark"
+				title: "Inventory Buttons"
 				icon: "minecraft:chest"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: -3.5d,
+			x: -4.0d
+			y: -3.5d
 			description: [
-				'To the right of the inventory is a list of every item. Filter it with the search list, then hover an item and press "R" to see its recipe or "U" to see recipes that it is used in. Use "A" to favorite items, they are on the left.',
-				'Once you are looking at a recipe, use the "+" button to add one set of the recipe to a crafting table. Shift click the button to add as many ingredients as you have. Tabs on the recipe list show smelting and other types of crafting.'
-			],
-			id: "00000000000000AF",
+				"To the right of the inventory is a list of every item. Filter it with the search list, then hover an item and press \"R\" to see its recipe or \"U\" to see recipes that it is used in. Use \"A\" to favorite items, they are on the left."
+				"Once you are looking at a recipe, use the \"+\" button to add one set of the recipe to a crafting table. Shift click the button to add as many ingredients as you have. Tabs on the recipe list show smelting and other types of crafting."
+			]
+			id: "00000000000000AF"
 			tasks: [{
-				id: "00000000000000B0",
-				type: "checkmark",
-				title: "Recipes and Autocrafting",
+				id: "00000000000000B0"
+				type: "checkmark"
+				title: "Recipes and Autocrafting"
 				icon: "minecraft:book"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: 0.5d,
+			x: 0.0d
+			y: 0.5d
 			description: [
-				"While pressing shift, right click a block such as a chest or spawner to pick it up. Right clicking again places the block. This is a convenient way to move blocks with large inventories like the high tier barrels.",
+				"While pressing shift, right click a block such as a chest or spawner to pick it up. Right clicking again places the block. This is a convenient way to move blocks with large inventories like the high tier barrels."
 				"Mobs such as cows and sheep can also be carried in this fashion."
-			],
-			id: "00000000000000B1",
+			]
+			id: "00000000000000B1"
 			tasks: [{
-				id: "00000000000000B2",
-				type: "checkmark",
-				title: "Carrying Blocks and Mobs",
+				id: "00000000000000B2"
+				type: "checkmark"
+				title: "Carrying Blocks and Mobs"
 				icon: "minecraft:spawner"
 			}]
 		}

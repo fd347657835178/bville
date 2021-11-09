@@ -1,343 +1,544 @@
 {
-	id: "000000000000001A",
-	group: "",
-	order_index: 3,
-	filename: "create",
-	title: "Create",
-	icon: "create:cogwheel",
-	default_quest_shape: "",
+	id: "000000000000001A"
+	group: ""
+	order_index: 3
+	filename: "create"
+	title: "Create"
+	icon: "create:cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -2.0d,
-			y: 2.0d,
+			x: -2.0d
+			y: 2.0d
 			description: [
-				"Create lets you automate lots of tasks like smelting and farming, using the infinite power of rotating machinery.",
+				"Create lets you automate lots of tasks like smelting and farming, using the infinite power of rotating machinery."
 				"It has its own documentation feature called Ponder that lets you see the blocks in motion and walks you through the use of each one."
-			],
-			id: "000000000000002F",
+			]
+			id: "000000000000002F"
 			tasks: [{
-				id: "000000000000004E",
-				type: "checkmark",
-				title: "Create",
+				id: "000000000000004E"
+				type: "checkmark"
+				title: "Create"
 				icon: "create:cogwheel"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: 2.0d,
-			description: ["This basic material is necessary to begin using this mod. Mine Zinc using iron tools."],
-			dependencies: ["000000000000002F"],
-			id: "0000000000000051",
+			x: 0.0d
+			y: 2.0d
+			description: ["This basic material is necessary to begin using this mod. Mine Zinc using iron tools."]
+			dependencies: ["000000000000002F"]
+			id: "0000000000000051"
 			tasks: [{
-				id: "0000000000000052",
-				type: "item",
+				id: "0000000000000052"
+				type: "item"
 				item: "create:andesite_alloy"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: 2.0d,
-			description: ["This is the cheapest source of rotation, which all machines need to operate. Use gears and shafts to convey rotation. The waterwheel needs moving water to flow under or over it for it to spin."],
-			dependencies: ["0000000000000051"],
-			id: "0000000000000053",
+			x: 2.0d
+			y: 2.0d
+			description: ["This is the cheapest source of rotation, which all machines need to operate. Use gears and shafts to convey rotation. The waterwheel needs moving water to flow under or over it for it to spin."]
+			dependencies: ["0000000000000051"]
+			id: "0000000000000053"
 			tasks: [{
-				id: "0000000000000054",
-				type: "item",
+				id: "0000000000000054"
+				type: "item"
 				item: "create:water_wheel"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000057",
-				type: "item",
+				id: "0000000000000057"
+				type: "item"
 				item: "minecraft:water_bucket"
 			}]
-		},
+		}
 		{
-			x: 4.0d,
-			y: 2.0d,
+			x: 4.0d
+			y: 2.0d
 			description: [
-				"The press can be used to convert ingots into plates- Place the press with an empty block between it and the ground, then throw ingots on the ground under the press and it will (slowly) press them.",
+				"The press can be used to convert ingots into plates- Place the press with an empty block between it and the ground, then throw ingots on the ground under the press and it will (slowly) press them."
 				"Large and small gears can be used in combination to increase or decrease rotation speed. Machines work faster if the rotation is faster, but they will also consume more stress."
-			],
-			dependencies: ["0000000000000053"],
-			id: "0000000000000055",
+			]
+			dependencies: ["0000000000000053"]
+			id: "0000000000000055"
 			tasks: [{
-				id: "0000000000000056",
-				type: "item",
+				id: "0000000000000056"
+				type: "item"
 				item: "create:mechanical_press"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000058",
-				type: "item",
+				id: "0000000000000058"
+				type: "item"
 				item: "create:wrench"
 			}]
-		},
+		}
 		{
-			x: 6.0d,
-			y: 0.0d,
-			description: ["When placed vertically, the saw can strip logs, or cut stripped logs into 5 planks. Place two saws next to each other and they will pass the items along automatically."],
-			dependencies: ["0000000000000055"],
-			id: "0000000000000059",
+			x: 6.0d
+			y: 0.0d
+			description: ["When placed vertically, the saw can strip logs, or cut stripped logs into 5 planks. Place two saws next to each other and they will pass the items along automatically."]
+			dependencies: ["0000000000000055"]
+			id: "0000000000000059"
 			tasks: [{
-				id: "000000000000005A",
-				type: "item",
+				id: "000000000000005A"
+				type: "item"
 				item: "create:mechanical_saw"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: 0.0d,
-			description: ["Can be used to crush wheat and flowers to improve their yield. Can crush ores as well, but you will need to wash the result with a fan to get any benefit."],
-			dependencies: ["0000000000000055"],
-			id: "000000000000005B",
+			x: 2.0d
+			y: 0.0d
+			description: ["Can be used to crush wheat and flowers to improve their yield. Can crush ores as well, but you will need to wash the result with a fan to get any benefit."]
+			dependencies: ["0000000000000055"]
+			id: "000000000000005B"
 			tasks: [{
-				id: "000000000000005C",
-				type: "item",
+				id: "000000000000005C"
+				type: "item"
 				item: "create:millstone"
 			}]
-		},
+		}
 		{
-			x: 4.0d,
-			y: -2.0d,
-			description: ["Fans can blow around items and mobs. If you blow air through water, lava, or fire, you can use it for crafting. Washing crushed ore into nuggets has a better return than smelting it into ingots. Use slabs or fences to hold the liquid in place."],
-			dependencies: ["0000000000000055"],
-			id: "000000000000005D",
+			x: 4.0d
+			y: -2.0d
+			description: ["Fans can blow around items and mobs. If you blow air through water, lava, or fire, you can use it for crafting. Washing crushed ore into nuggets has a better return than smelting it into ingots. Use slabs or fences to hold the liquid in place."]
+			dependencies: ["0000000000000055"]
+			id: "000000000000005D"
 			tasks: [{
-				id: "000000000000005E",
-				type: "item",
+				id: "000000000000005E"
+				type: "item"
 				item: "create:encased_fan"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: -2.0d,
-			description: ["Sick of the fan blowing around your items? Use a depot and it can hold your items in place safely while they are being washed or cooked."],
-			dependencies: ["000000000000005D"],
-			id: "000000000000005F",
+			x: 2.0d
+			y: -2.0d
+			description: ["Sick of the fan blowing around your items? Use a depot and it can hold your items in place safely while they are being washed or cooked."]
+			dependencies: ["000000000000005D"]
+			id: "000000000000005F"
 			tasks: [{
-				id: "0000000000000060",
-				type: "item",
+				id: "0000000000000060"
+				type: "item"
 				item: "create:depot"
 			}]
-		},
+		}
 		{
-			x: 6.0d,
-			y: 4.0d,
-			description: ["When moving, harvests and replants fully grown crops it hits. Try attaching some to the bottom of a windmill-driven structure."],
-			dependencies: ["0000000000000055"],
-			id: "0000000000000061",
+			x: 6.0d
+			y: 4.0d
+			description: ["When moving, harvests and replants fully grown crops it hits. Try attaching some to the bottom of a windmill-driven structure."]
+			dependencies: ["0000000000000055"]
+			id: "0000000000000061"
 			tasks: [{
-				id: "0000000000000062",
-				type: "item",
+				id: "0000000000000062"
+				type: "item"
 				item: "create:mechanical_harvester"
 			}]
-		},
+		}
 		{
-			x: 6.0d,
-			y: 2.0d,
-			description: ["Mechanical bearings can be used to spin attached structures. Use chassis blocks, painted with slime, to build a structure. Machines like drills or harvesters that are attached to moving structures will work for free."],
-			dependencies: ["0000000000000055"],
-			id: "0000000000000063",
+			x: 6.0d
+			y: 2.0d
+			description: ["Mechanical bearings can be used to spin attached structures. Use chassis blocks, painted with slime, to build a structure. Machines like drills or harvesters that are attached to moving structures will work for free."]
+			dependencies: ["0000000000000055"]
+			id: "0000000000000063"
 			tasks: [{
-				id: "0000000000000069",
-				type: "item",
+				id: "0000000000000069"
+				type: "item"
 				item: "create:mechanical_bearing"
 			}]
-		},
+		}
 		{
-			x: 8.0d,
-			y: 2.0d,
-			description: ["You can use the storage interface to pull items out of a moving structure. The structure will pause to let the items transfer, then continue moving."],
-			dependencies: ["0000000000000063"],
-			id: "0000000000000065",
+			x: 8.0d
+			y: 2.0d
+			description: ["You can use the storage interface to pull items out of a moving structure. The structure will pause to let the items transfer, then continue moving."]
+			dependencies: ["0000000000000063"]
+			id: "0000000000000065"
 			tasks: [{
-				id: "0000000000000066",
-				type: "item",
+				id: "0000000000000066"
+				type: "item"
 				item: "create:portable_storage_interface"
 			}]
-		},
+		}
 		{
-			x: 8.0d,
-			y: -2.0d,
-			description: ["Instead of using chassis blocks, you can superglue any block to any other block and make a moving structure out of that."],
-			dependencies: ["0000000000000065"],
-			id: "0000000000000067",
+			x: 8.0d
+			y: -2.0d
+			description: ["Instead of using chassis blocks, you can superglue any block to any other block and make a moving structure out of that."]
+			dependencies: ["0000000000000065"]
+			id: "0000000000000067"
 			tasks: [{
-				id: "0000000000000068",
-				type: "item",
+				id: "0000000000000068"
+				type: "item"
 				item: {
-					id: "create:super_glue",
-					Count: 1b,
+					id: "create:super_glue"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -6.0d,
-			y: 6.0d,
-			description: ["These wheels can grind items like the Millstone, but with better returns. It can also grind some new items like crushing cobblestone to gravel or gravel to sand, with some byproducts."],
-			dependencies: ["7CA1DB117F2E209A"],
-			id: "2483B06A8F9309F6",
+			x: -6.0d
+			y: 6.0d
+			description: ["These wheels can grind items like the Millstone, but with better returns. It can also grind some new items like crushing cobblestone to gravel or gravel to sand, with some byproducts."]
+			dependencies: ["7CA1DB117F2E209A"]
+			id: "2483B06A8F9309F6"
 			tasks: [{
-				id: "2739ED3572048999",
-				type: "item",
+				id: "2739ED3572048999"
+				type: "item"
 				item: "create:crushing_wheel"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: 6.0d,
-			description: ["Mechanical Crafters can be used to make any recipe, and there's also some recipes that can only be crafted this way. Mechanical Arms can be used to automate filling the crafters, check Ponder for details."],
+			x: -4.0d
+			y: 6.0d
+			description: ["Mechanical Crafters can be used to make any recipe, and there's also some recipes that can only be crafted this way. Mechanical Arms can be used to automate filling the crafters, check Ponder for details."]
 			dependencies: [
-				"523DE8EAA02D3105",
+				"523DE8EAA02D3105"
 				"7D19D1861B393FCE"
-			],
-			dependency_requirement: "all_started",
-			id: "7CA1DB117F2E209A",
+			]
+			dependency_requirement: "all_started"
+			id: "7CA1DB117F2E209A"
 			tasks: [{
-				id: "71914E574739AAFF",
-				type: "item",
+				id: "71914E574739AAFF"
+				type: "item"
 				item: "create:mechanical_crafter"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: 4.0d,
-			description: ["Electron Tubes are needed for advanced machinery. Most of it needs Brass, but there are a few devices you can make before that."],
-			dependencies: ["583008A04E79C60F"],
-			id: "7D19D1861B393FCE",
+			x: -4.0d
+			y: 4.0d
+			description: ["Electron Tubes are needed for advanced machinery. Most of it needs Brass, but there are a few devices you can make before that."]
+			dependencies: ["583008A04E79C60F"]
+			id: "7D19D1861B393FCE"
 			tasks: [{
-				id: "303C4A608331E3F4",
-				type: "item",
+				id: "303C4A608331E3F4"
+				type: "item"
 				item: "create:electron_tube"
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: 2.0d,
-			description: ["To make Electron Tubes, you'll need to craft some Rose Quartz, then polish it with sandpaper. Hold the Rose Quartz in your offhand and the sandpaper in your main hand and hold right click. Later, Deployers can automate this process."],
-			dependencies: ["000000000000002F"],
-			id: "583008A04E79C60F",
+			x: -4.0d
+			y: 2.0d
+			description: ["To make Electron Tubes, you'll need to craft some Rose Quartz, then polish it with sandpaper. Hold the Rose Quartz in your offhand and the sandpaper in your main hand and hold right click. Later, Deployers can automate this process."]
+			dependencies: ["000000000000002F"]
+			id: "583008A04E79C60F"
 			tasks: [{
-				id: "13D72F20545F4A03",
-				type: "item",
+				id: "13D72F20545F4A03"
+				type: "item"
 				item: "create:rose_quartz"
-			}],
+			}]
 			rewards: [{
-				id: "2F51D05E1EDD5BCC",
-				type: "item",
+				id: "2F51D05E1EDD5BCC"
+				type: "item"
 				item: {
-					id: "create:sand_paper",
-					Count: 1b,
+					id: "create:sand_paper"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: 4.0d,
-			description: ["Brass is needed for advanced machinery and tools, as well as many decorative blocks."],
-			dependencies: ["3B72E5437812FBF6"],
-			id: "523DE8EAA02D3105",
+			x: 2.0d
+			y: 4.0d
+			description: ["Brass is needed for advanced machinery and tools, as well as many decorative blocks."]
+			dependencies: ["3B72E5437812FBF6"]
+			id: "523DE8EAA02D3105"
 			tasks: [{
-				id: "2C32B4DBACA30BC7",
-				type: "item",
+				id: "2C32B4DBACA30BC7"
+				type: "item"
 				item: "create:brass_ingot"
 			}]
-		},
+		}
 		{
-			x: 4.0d,
-			y: 6.0d,
-			description: ["You need a Blaze Burner under your mixer basin for some recipes. Make an Empty Blaze Burner then right click a blaze with it to capture it. The burner needs to be fed normal fuel items to activate for recipes, or special fuel for advanced recipes."],
-			dependencies: ["06CF7766C01D0422"],
-			id: "3B72E5437812FBF6",
+			x: 4.0d
+			y: 6.0d
+			description: ["You need a Blaze Burner under your mixer basin for some recipes. Make an Empty Blaze Burner then right click a blaze with it to capture it. The burner needs to be fed normal fuel items to activate for recipes, or special fuel for advanced recipes."]
+			dependencies: ["06CF7766C01D0422"]
+			id: "3B72E5437812FBF6"
 			tasks: [{
-				id: "2C1AF340AFF81DFC",
-				type: "item",
+				id: "2C1AF340AFF81DFC"
+				type: "item"
 				item: "create:blaze_burner"
 			}]
-		},
+		}
 		{
-			x: 4.0d,
-			y: 4.0d,
-			description: ["The mixer can combine materials to get products such as brass. You will need to chain cogs together to get the speed high enough- try out the Ponder function on a Cogwheel to see an example."],
-			dependencies: ["0000000000000055"],
-			id: "06CF7766C01D0422",
+			x: 4.0d
+			y: 4.0d
+			description: ["The mixer can combine materials to get products such as brass. You will need to chain cogs together to get the speed high enough- try out the Ponder function on a Cogwheel to see an example."]
+			dependencies: ["0000000000000055"]
+			id: "06CF7766C01D0422"
 			tasks: [{
-				id: "1A5A3679013EA685",
-				type: "item",
+				id: "1A5A3679013EA685"
+				type: "item"
 				item: "create:mechanical_mixer"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: 6.0d,
-			description: ["The mechanical arm can intelligently move items between inventories. It has many configuration options and processing modes, but when used properly it can distribute items off of belts or into crafting setups very easily, without getting blocked."],
-			dependencies: ["24AB3C62023AE615"],
-			id: "22BB16FC845D674B",
+			x: -2.0d
+			y: 6.0d
+			description: ["The mechanical arm can intelligently move items between inventories. It has many configuration options and processing modes, but when used properly it can distribute items off of belts or into crafting setups very easily, without getting blocked."]
+			dependencies: ["24AB3C62023AE615"]
+			id: "22BB16FC845D674B"
 			tasks: [{
-				id: "435F71757F669CD1",
-				type: "item",
+				id: "435F71757F669CD1"
+				type: "item"
 				item: "create:mechanical_arm"
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: 6.0d,
-			description: ["Deployers can be used to automate player actions. They can break blocks, place blocks, use tools, plant crops, whatever. They can also be used for sequenced assembly, where items are added to a product- either by passing a sequence of items to one deployer or passing a product through a set of dedicated deployers."],
+			x: 2.0d
+			y: 6.0d
+			description: ["Deployers can be used to automate player actions. They can break blocks, place blocks, use tools, plant crops, whatever. They can also be used for sequenced assembly, where items are added to a product- either by passing a sequence of items to one deployer or passing a product through a set of dedicated deployers."]
 			dependencies: [
-				"523DE8EAA02D3105",
+				"523DE8EAA02D3105"
 				"7D19D1861B393FCE"
-			],
-			id: "6AFD4F201B946F53",
+			]
+			id: "6AFD4F201B946F53"
 			tasks: [{
-				id: "34A043F0CA93B2F9",
-				type: "item",
+				id: "34A043F0CA93B2F9"
+				type: "item"
 				item: "create:deployer"
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: 6.0d,
-			description: ["This intermediate product is used to craft some of the most complex items in Create. It can only be made through deployers with sequenced assembly. The success rate is 80% on the craft, so you might have to run the recipe a few times to get one."],
-			dependencies: ["6AFD4F201B946F53"],
-			id: "24AB3C62023AE615",
+			x: 0.0d
+			y: 6.0d
+			description: ["This intermediate product is used to craft some of the most complex items in Create. It can only be made through deployers with sequenced assembly. The success rate is 80% on the craft, so you might have to run the recipe a few times to get one."]
+			dependencies: ["6AFD4F201B946F53"]
+			id: "24AB3C62023AE615"
 			tasks: [{
-				id: "7416F12701797233",
-				type: "item",
-				item: "create:precision_mechanism"
-			}],
-			rewards: [{
-				id: "759A5F41784732C0",
-				type: "item",
+				id: "7416F12701797233"
+				type: "item"
 				item: "create:precision_mechanism"
 			}]
-		},
+			rewards: [{
+				id: "759A5F41784732C0"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
 		{
-			x: 6.0d,
-			y: 6.0d,
-			description: ["Create adds some exotic foods that are harder to get than most- you'll have to brew this tea in a mixer and use a spout to put it in a jar."],
-			dependencies: ["06CF7766C01D0422"],
-			id: "116D63C8D11E1E2B",
+			x: 6.0d
+			y: 6.0d
+			description: ["Create adds some exotic foods that are harder to get than most- you'll have to brew this tea in a mixer and use a spout to put it in a jar."]
+			dependencies: ["06CF7766C01D0422"]
+			id: "116D63C8D11E1E2B"
 			tasks: [{
-				id: "0ED6C48CA55DB8F6",
-				type: "item",
+				id: "0ED6C48CA55DB8F6"
+				type: "item"
 				item: "create:builders_tea"
 			}]
-		},
+		}
 		{
-			x: 8.0d,
-			y: 4.0d,
-			description: ["Windmills can generate rotation by spinning. They can face any direction and don't even need to be outside. If a big enough sail is used, these are the strongest generators in Create."],
-			dependencies: ["0000000000000063"],
-			id: "0E24936FD5A9C5F4",
+			x: 8.0d
+			y: 4.0d
+			description: ["Windmills can generate rotation by spinning. They can face any direction and don't even need to be outside. If a big enough sail is used, these are the strongest generators in Create."]
+			dependencies: ["0000000000000063"]
+			id: "0E24936FD5A9C5F4"
 			tasks: [{
-				id: "3F46459AC0107927",
-				type: "item",
+				id: "3F46459AC0107927"
+				type: "item"
 				item: "create:windmill_bearing"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			description: ["You can mill soul soil into soul sand."]
+			dependencies: ["60E4F4002CEA5879"]
+			id: "12ECD456015F9496"
+			tasks: [{
+				id: "081D0CBEC8B9C350"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -4.0d
+			description: ["Washing soul sand produces quartz (and gold!)"]
+			dependencies: ["12ECD456015F9496"]
+			id: "387C33569D4A61BE"
+			tasks: [{
+				id: "440C80BEA55D83E7"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -4.0d
+			description: ["Mixing dirt and cinder flour over a heated burner produces soul soil. You can crush netherrack to get the cinder flour."]
+			dependencies: [
+				"55909B8917421C0F"
+				"02226811F051DE53"
+			]
+			id: "60E4F4002CEA5879"
+			tasks: [{
+				id: "6247713E9AD80372"
+				type: "item"
+				item: "minecraft:soul_soil"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			description: ["Filling sand with water will make dirt."]
+			dependencies: ["0A9890D616691009"]
+			id: "02226811F051DE53"
+			tasks: [{
+				id: "53A69B2344BC1ED3"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.0d
+			description: ["You can make a cobblestone generator using a drill with water and lava."]
+			id: "3ECD9D1A1637E2FB"
+			tasks: [{
+				id: "2442EF05CDFE089D"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			description: ["Crushing gravel will produce sand (and sometimes flint and clay)"]
+			dependencies: ["71B560DAB740576F"]
+			id: "0A9890D616691009"
+			tasks: [{
+				id: "215AE6421A994ADD"
+				type: "item"
+				item: "minecraft:sand"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			description: ["You can mill cobblestone into gravel."]
+			dependencies: ["3ECD9D1A1637E2FB"]
+			id: "71B560DAB740576F"
+			tasks: [{
+				id: "45424E5D9E76DF33"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -2.0d
+			description: ["Filling cobblestone with lava will make netherrack."]
+			dependencies: ["3ECD9D1A1637E2FB"]
+			id: "55909B8917421C0F"
+			tasks: [{
+				id: "74851A5EB20513BC"
+				type: "item"
+				item: "minecraft:netherrack"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -6.0d
+			description: ["Mixing quartz with a brick produces redstone. You can get clay for the bricks by washing sand or crushing gravel."]
+			dependencies: ["387C33569D4A61BE"]
+			id: "6F3849D4DCC0D045"
+			tasks: [{
+				id: "3FC5816129108F99"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			description: ["Mixing quartz with a torch produces glowstone. Use mechanical crafters to make the torches automatically."]
+			dependencies: ["387C33569D4A61BE"]
+			id: "5A64D42E2265FBB2"
+			tasks: [{
+				id: "704516346433B441"
+				type: "item"
+				item: "minecraft:glowstone_dust"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -4.0d
+			description: ["Mixing quartz, blue dye, and water over a heated blaze burner will produce lapis. The blue dye can be obtained from a bone meal to cornflower farm, or by milling some of the resulting lapis to feed into processing."]
+			dependencies: ["387C33569D4A61BE"]
+			id: "2761766D738D39E6"
+			tasks: [{
+				id: "5DA1FE33FD839078"
+				type: "item"
+				item: "minecraft:lapis_lazuli"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			description: ["Washing gravel will occasionally produce iron (and flint!)"]
+			dependencies: ["71B560DAB740576F"]
+			id: "5CC374148BE12C05"
+			tasks: [{
+				id: "56D0FF0753B453F7"
+				type: "item"
+				item: "minecraft:iron_nugget"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -6.0d
+			description: ["Washing soul sand produces gold (and quartz!)"]
+			dependencies: ["12ECD456015F9496"]
+			id: "6A2F539E0AA4E8FB"
+			tasks: [{
+				id: "65865558649CDF52"
+				type: "item"
+				item: "minecraft:gold_nugget"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -6.0d
+			description: ["Pressing gold and redstone with lava produces copper."]
+			dependencies: [
+				"6F3849D4DCC0D045"
+				"6A2F539E0AA4E8FB"
+			]
+			id: "6F1673AE6BFD4B38"
+			tasks: [{
+				id: "0AC55DDE83E50CFE"
+				type: "item"
+				item: "create:copper_ingot"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.0d
+			description: ["Pressing iron and glowstone with lava produces zinc."]
+			dependencies: [
+				"5A64D42E2265FBB2"
+				"5CC374148BE12C05"
+			]
+			id: "104A1F164313F12A"
+			tasks: [{
+				id: "0D519375A53FEE29"
+				type: "item"
+				item: "create:zinc_ingot"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -4.0d
+			description: ["Pressing lapis with coal (or charcoal) blocks while super-heated will result in a diamond."]
+			dependencies: ["2761766D738D39E6"]
+			id: "1BCBD9A3150AB054"
+			tasks: [{
+				id: "702DF069EBEB072B"
+				type: "item"
+				item: "minecraft:diamond"
 			}]
 		}
 	]
