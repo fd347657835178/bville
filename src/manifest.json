@@ -1,12 +1,12 @@
 {
   "minecraft": {
     "version": "1.16.5",
-    "modLoaders": [{ "id": "forge-36.2.2", "primary": true }]
+    "modLoaders": [{ "id": "forge-36.2.19", "primary": true }]
   },
   "manifestType": "minecraftModpack",
   "overrides": "overrides",
   "manifestVersion": 1,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "feltdome",
   "projectID": 430700,
   "name": "BVille",
@@ -18,7 +18,7 @@
     { "projectID": 335673, "fileID": 3250771, "required": true, "modnick": "Dank Storage" },
     { "projectID": 317134, "fileID": 3153569, "required": true, "modnick": "Global Data- & Resourcepacks" },
     { "projectID": 238222, "fileID": 3519343, "required": true, "modnick": "Just Enough Items (JEI)" },
-    { "projectID": 245506, "fileID": 3495242, "required": true, "modnick": "MineColonies" },
+    { "projectID": 245506, "fileID": 3539481, "required": true, "modnick": "MineColonies" },
     { "projectID": 298744, "fileID": 3488829, "required": true, "modnick": "Structurize" },
     { "projectID": 243121, "fileID": 3490981, "required": true, "modnick": "Quark" },
     { "projectID": 223852, "fileID": 3402515, "required": true, "modnick": "Storage Drawers" },
@@ -33,8 +33,8 @@
     { "projectID": 407174, "fileID": 3188120, "required": true, "modnick": "Shutup Experimental Settings!" },
     { "projectID": 271740, "fileID": 3172881, "required": true, "modnick": "Toast Control" },
     { "projectID": 283644, "fileID": 3172794, "required": true, "modnick": "Placebo" },
-    { "projectID": 317780, "fileID": 3512812, "required": true, "modnick": "Xaero's World Map" },
-    { "projectID": 263420, "fileID": 3511445, "required": true, "modnick": "Xaero's Minimap" },
+    { "projectID": 317780, "fileID": 3532562, "required": true, "modnick": "Xaero's World Map" },
+    { "projectID": 263420, "fileID": 3532550, "required": true, "modnick": "Xaero's Minimap" },
     { "projectID": 243707, "fileID": 3498172, "required": true, "modnick": "Corail Tombstone" },
     { "projectID": 309927, "fileID": 3343065, "required": true, "modnick": "Curios API" },
     { "projectID": 306770, "fileID": 3374063, "required": true, "modnick": "Patchouli" },
@@ -54,7 +54,7 @@
     { "projectID": 252848, "fileID": 3382150, "required": true, "modnick": "Nature's Compass" },
     { "projectID": 327554, "fileID": 3339467, "required": true, "modnick": "Simple Farming" },
     { "projectID": 245174, "fileID": 3361748, "required": true, "modnick": "Ender Storage 1.8.+" },
-    { "projectID": 242818, "fileID": 3361747, "required": true, "modnick": "CodeChicken Lib 1.8.+" },
+    { "projectID": 242818, "fileID": 3528603, "required": true, "modnick": "CodeChicken Lib 1.8.+" },
     { "projectID": 277616, "fileID": 3355731, "required": true, "modnick": "Spice of Life: Carrot Edition" },
     { "projectID": 55438, "fileID": 3346467, "required": true, "modnick": "MrCrayfish's Furniture Mod" },
     { "projectID": 233342, "fileID": 3216206, "required": true, "modnick": "Fairy Lights" },
@@ -74,6 +74,12 @@
     { "projectID": 321663, "fileID": 3435330, "required": true, "modnick": "Enhanced Mob Spawners" },
     { "projectID": 419699, "fileID": 3385660, "required": true, "modnick": "Architectury API (Forge)" },    
     { "projectID": 264353, "fileID": 3103028, "required": true, "modnick": "SwingThroughGrass" },
-    { "projectID": 254268, "fileID": 3433163, "required": true, "modnick": "Torchmaster" }
+    { "projectID": 254268, "fileID": 3433163, "required": true, "modnick": "Torchmaster" },
+    { "projectID": 258426, "fileID": 3529432, "required": true, "modnick": "CB Multipart" },
+    { "projectID": 471286, "fileID": 3276638, "required": true, "modnick": "Scorge" },
+    { "projectID": 228702, "fileID": 3407713, "required": true, "modnick": "Project Red - Core" },
+    { "projectID": 229046, "fileID": 3407715, "required": true, "modnick": "Project Red - Illumination" },
+    { "projectID": 229045, "fileID": 3407714, "required": true, "modnick": "Project Red - Integration" },
+    { "projectID": 478939, "fileID": 3407718, "required": true, "modnick": "Project Red - Transmission" }
   ]
 }

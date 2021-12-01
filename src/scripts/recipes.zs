@@ -90,6 +90,9 @@ craftingTable.addShaped("sandland_world_control",
 [<item:minecraft:terracotta>, <item:minecraft:air>, <item:minecraft:terracotta>], 
 [<item:minecraft:air>, <item:minecraft:stone>, <item:minecraft:air>]], null);
 
+// Projectred convenience
+<recipetype:create:mixing>.addRecipe("cheap_red_ingot", "heated", <item:projectred-core:red_ingot>, [<item:minecraft:iron_ingot>, <item:minecraft:redstone> * 4], []);
+
 // Resource Generation
 //netherrack
 <recipetype:create:filling>.addRecipe("gen_netherrack", <item:minecraft:netherrack>, <tag:items:forge:cobblestone>, <fluid:minecraft:lava> * 250);
